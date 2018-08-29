@@ -6,16 +6,19 @@
       <mj-image alt=""></mj-image>
       <mj-section padding="0"></mj-section>
       <mj-column></mj-column>
-      <mj-button background-color="#99cc00" border-radius="25px" height="50px" font-size="14px" padding="0"></mj-button>
+      <mj-button background-color="#99cc00" border-radius="25px" font-size="14px" padding="0" height="50px"></mj-button>
       <mj-divider border-color="#eeeff4" border-style="solid" border-width="0.5px"></mj-divider>
     </mj-attributes>
     <mj-style inline="inline">
       .container { padding: 0 48px !important; }
       .news-container { padding: 0 24px 0 48px !important; }
-      .show-mobile { display: none; width: 0; height: 0; opacity: 0; visibility: hidden; }
-      .button td { box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; }
+      .footer-container { padding: 0 48px !important; }
+      .footer-container_right {padding-left: 0 !important;}
+      .footer-top-mobile { display: none; width: 0; height: 0; opacity: 0; visibility: hidden; }
+      .button td { box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; padding: 0 !important; }
       .button table { width: 100%; }
-      .button-text { color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-sapcing: .07em; line-height: 1em; }
+      .button p { border-radius: 8px; }
+      .button-text { color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-sapcing: .07em; line-height: 16px; border: 17px solid #99cc00; border-radius: 25px; }
       .text-bubble {padding: 0; border-width: 0; font-size: 0; margin-right: 8px; }
       .news-title {font-size: 20px; line-height: 1.4em; color: #1f1f22; font-weight: 400; }
       .news-text {font-size: 17px; line-height: 1.53em; color: #6e768d; letter-spacing: 0.005em; }
@@ -35,15 +38,22 @@
       	.logo td { width: 93px !important; }
       	.logo img { width: 93px !important; }
       	.container { padding: 0 24px !important; }
-      	.news-container { padding: 0 12px 0 24px !important; }
+      	.news-container { padding: 0 11px 0 24px !important; }
+      	.footer-container { padding: 0 12px !important; }
         .greeting-title { font-size: 24px !important; line-height: 1.17em !important; }
         .news-title {font-size: 17px !important; line-height: 1.53em !important; }
         .news-img { padding-right: 24px !important; }
-      	.show-mobile { display: block !important; width: 100% !important; height: auto !important; opacity: 1 !important; visibility: visible !important; }
-      	.show-desktop { display: none !important; width: 0 !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; }
+      	.footer-top-mobile { display: block !important; width: 100% !important; height: auto !important; opacity: 1 !important; visibility: visible !important; }
+      	.footer-top-desktop { display: none !important; width: 0 !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; }
       	.profile-col { width: 10% !important; }
       	.profile-main {width: 80% !important; }
       	.button_wide td { border-radius: 3px !important; }
+      	.button_wide table { width: 100% !important; }
+      }
+      
+      @media all and (max-width: 480px) {
+      	.footer-logo { width: 43% !important;}
+      	.footer-logo-divider {width: 57% !important; }
       }
     </mj-style>
   </mj-head>
@@ -74,7 +84,7 @@
             </mj-text>
           </mj-column>
           <mj-column css-class="news-image" width="23%">
-            <mj-image src="assets/img/mes.png" width="44" height="44" alt="" css-class="news-img" align="right" padding="0 48px 0 0"></mj-image>
+            <mj-image src="https://allkrain.github.io/takerIm/assets/img/mes.png" width="44" height="44" alt="" css-class="news-img" align="right" padding="0 48px 0 0"></mj-image>
           </mj-column>
         </mj-group>
       </mj-section>
@@ -91,17 +101,17 @@
             <mj-text align="left" css-class="news-container">
               <a href="#" class="news-link" tagert="_blank">
                 <h3 class="news-title">Great_Deal</h3>
-                <p class="news-text"><img width="14" height="14" src="assets/img/messages.png" alt="" class="text-bubble">Новое сообщение</p>
+                <p class="news-text"><img width="14" height="14" src="https://allkrain.github.io/takerIm/assets/img/messages.png" alt="" class="text-bubble">Новое сообщение</p>
               </a>
             </mj-text>
           </mj-column>
           <mj-column css-class="news-image" width="23%">
-            <mj-image src="https://yadi.sk/i/LXGQMwjt3afhtc" width="44" height="44" border-radius="22px" alt="" css-class="news-img" align="right" padding="0 48px 0 0"></mj-image>
+            <mj-image src="https://allkrain.github.io/takerIm/assets/img/avatar.jpg" width="44" height="44" border-radius="22px" alt="" css-class="news-img" align="right" padding="0 48px 0 0"></mj-image>
           </mj-column>
         </mj-group>
       </mj-section>
         
-      <mj-section background-color="transparent" background-url="assets/img/bg-button.png" background-size="50px 50px" background-repeat="repeat-x">
+      <mj-section background-color="transparent" background-url="https://allkrain.github.io/takerIm/assets/img/bg-button.png" background-size="50px 50px" background-repeat="repeat-x">
         <mj-column>
           <mj-button css-class="button button_wide" width="276px"><a href="#" class="button-text">посмотреть</a></mj-button>
         </mj-column>
@@ -112,7 +122,7 @@
     <mj-wrapper css-class="rating">      
       <mj-section>
         <mj-column css-class="gray">
-          <mj-image css-class="rating-image" src="assets/img/rating.png"></mj-image>
+          <mj-image css-class="rating-image" src="https://allkrain.github.io/takerIm/assets/img/rating.png"></mj-image>
         </mj-column>
       </mj-section>
 
@@ -131,7 +141,7 @@
     <mj-wrapper css-class="achievement">      
       <mj-section>
         <mj-column css-class="gray">
-          <mj-image css-class="achievement-image" src="assets/img/achievement.png"></mj-image>
+          <mj-image css-class="achievement-image" src="https://allkrain.github.io/takerIm/assets/img/achievement.png"></mj-image>
         </mj-column>
       </mj-section>
 
@@ -162,7 +172,7 @@
     <mj-wrapper css-class="guard">
       <mj-section css-class="gray">
         <mj-column css-class="gaurd-symbol" width="21%">
-          <mj-image src="assets/img/guard.png" width="30" height="44" alt="" css-class="guard-img" align="right" padding="0 48px 0 0"></mj-image>
+          <mj-image src="https://allkrain.github.io/takerIm/assets/img/guard.png" width="30" height="44" alt="" css-class="guard-img" align="right" padding="0 48px 0 0"></mj-image>
         </mj-column>
         <mj-column css-class="gaurd-content" width="79%">
           <mj-text align="left" css-class="guard-container">

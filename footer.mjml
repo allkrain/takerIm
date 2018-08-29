@@ -1,18 +1,23 @@
 
 
-<mj-wrapper css-class="show-desktop">
+<mj-wrapper css-class="footer-top-desktop">
 	<mj-section>
 
     <mj-group>
       <mj-column>
-        <mj-text css-class="container">
-          logo
-        </mj-text>
+        <mj-image src="https://allkrain.github.io/takerIm/assets/img/logo_taker.png" width="93" alt="TakerIM" css-class="logo-small footer-container" href="#" align="left" padding></mj-image>
       </mj-column>
       <mj-column>
-        <mj-text css-class="container">
-          socials
-        </mj-text>
+        <mj-social font-size="0" icon-size="24px" mode="horizontal" align="left" border-radius="0" inner-padding="0 51px 0 0" padding="0">
+          <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/vk.png" border-radius="0" icon-size="24px">
+          </mj-social-element>
+          <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/fb.png" border-radius="0" icon-size="24px">
+          </mj-social-element>
+          <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/yt.png" border-radius="0" icon-size="24px">
+          </mj-social-element>
+          <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/it.png" border-radius="0" icon-size="24px">
+          </mj-social-element>
+        </mj-social>
       </mj-column>
     </mj-group>
 
@@ -20,7 +25,7 @@
   
   <mj-section>
     <mj-column>
-      <mj-divider css-class="container" border-color="#e3e6eb"></mj-divider>
+      <mj-divider css-class="footer-container" border-color="#e3e6eb"></mj-divider>
     </mj-column>
   </mj-section>
   
@@ -28,7 +33,7 @@
 
     <mj-group>
       <mj-column>
-        <mj-text css-class="container">
+        <mj-text css-class="footer-container">
           <ul class="menu">
             <li><a href="#" class="link-gray">Проверка продавца</a></li>
             <li><a href="#" class="link-gray">обзоры</a></li>
@@ -36,7 +41,7 @@
         </mj-text>
       </mj-column>
       <mj-column>
-        <mj-text css-class="container">
+        <mj-text css-class="footer-container footer-container_right">
           <ul class="menu">
             <li><a href="#" class="link-gray">Статьи</a></li>
             <li><a href="#" class="link-gray">Форум</a></li>
@@ -48,21 +53,25 @@
   </mj-section>
 </mj-wrapper>
 
-<mj-wrapper css-class="show-mobile">
+<mj-wrapper css-class="footer-top-mobile">
 	<mj-section>
+    <mj-group>
 
-    <mj-column>
-      <mj-text css-class="container">
-        logo
-      </mj-text>
-    </mj-column>
+      <mj-column width="27%" css-class="footer-logo">
+        <mj-image src="https://allkrain.github.io/takerIm/assets/img/logo_taker.png" width="93" alt="TakerIM" css-class="logo-small footer-container" href="#" align="left"></mj-image>
+      </mj-column>
+      
+      <mj-column width="73%" padding="0" css-class="footer-logo-divider">
+        <mj-divider border-color="#e3e6eb" padding="17.5px 11px 17.5px 0"></mj-divider>
+      </mj-column>
+    </mj-group>
 
   </mj-section>
   
   <mj-section>
 
     <mj-column>
-      <mj-text css-class="container">
+      <mj-text css-class="footer-container">
         <ul class="menu">
           <li><a href="#" class="link-gray">Проверка продавца</a></li>
           <li><a href="#" class="link-gray">обзоры</a></li>
@@ -76,34 +85,42 @@
   
   <mj-section>
     <mj-column>
-      <mj-divider css-class="container" border-color="#e3e6eb"></mj-divider>
+      <mj-divider css-class="footer-container" border-color="#e3e6eb"></mj-divider>
     </mj-column>
   </mj-section>
   
   <mj-section>
 
     <mj-column>
-      <mj-text css-class="container">
-        socials
-      </mj-text>
+      <mj-social font-size="0" icon-size="24px" mode="horizontal" align="center" css-class="footer-container" border-radius="0" inner-padding="0 19px">
+        <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/vk.png" border-radius="0">
+        </mj-social-element>
+        <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/fb.png" border-radius="0">
+        </mj-social-element>
+        <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/yt.png" border-radius="0">
+        </mj-social-element>
+        <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/it.png" border-radius="0">
+        </mj-social-element>
+      </mj-social>
     </mj-column>
 
   </mj-section>
 </mj-wrapper>
 
-<mj-section>
+<mj-section css-class="footer-text">
 
   <mj-column>
-    <mj-text css-class="text-small container" align="left">
+    <mj-text css-class="text-small footer-container" align="left">
       <p class="text-small">Вы получили это письмо, потому что являетесь пользователем Taker.im. Вы можете изменить настройки оповещений в <a href="#" class="link">личном кабинете</a> или <a href="#" class="link">отписаться от рассылки.</a></p>
     </mj-text>
   </mj-column>
 
 </mj-section>
-<mj-section>
+
+<mj-section css-class="footer-copyright">
 
   <mj-column>
-    <mj-text css-class="copyright container" align="left">&copy; Taker.im, 2018This is the footer
+    <mj-text css-class="copyright footer-container" align="left">&copy; Taker.im, 2018This is the footer
     </mj-text>
   </mj-column>
 
