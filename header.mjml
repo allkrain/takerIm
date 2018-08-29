@@ -1,7 +1,0 @@
-<mj-section>
-
-  <mj-column>
-    <mj-image src="assets/img/logo_taker.png" width="127" alt="TakerIM" css-class="logo container"></mj-image>
-  </mj-column>
-
-</mj-section>
