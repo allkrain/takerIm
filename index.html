@@ -61,6 +61,7 @@
 .mj-column-per-21 { width:21% !important; }
 .mj-column-per-79 { width:79% !important; }
 .mj-column-per-50 { width:50% !important; }
+.mj-column-per-73 { width:73% !important; }
       }
     </style>
     
@@ -74,16 +75,22 @@
       	.logo td { width: 93px !important; }
       	.logo img { width: 93px !important; }
       	.container { padding: 0 24px !important; }
-      	.news-container { padding: 0 12px 0 24px !important; }
+      	.news-container { padding: 0 11px 0 24px !important; }
+      	.footer-container { padding: 0 12px !important; }
         .greeting-title { font-size: 24px !important; line-height: 1.17em !important; }
         .news-title {font-size: 17px !important; line-height: 1.53em !important; }
         .news-img { padding-right: 24px !important; }
-      	.show-mobile { display: block !important; width: 100% !important; height: auto !important; opacity: 1 !important; visibility: visible !important; }
-      	.show-desktop { display: none !important; width: 0 !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; }
+      	.footer-top-mobile { display: block !important; width: 100% !important; height: auto !important; opacity: 1 !important; visibility: visible !important; }
+      	.footer-top-desktop { display: none !important; width: 0 !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; }
       	.profile-col { width: 10% !important; }
       	.profile-main {width: 80% !important; }
       	.button_wide td { border-radius: 3px !important; }
       	.button_wide table { width: 100% !important; }
+      }
+      
+      @media all and (max-width: 480px) {
+      	.footer-logo { width: 43% !important;}
+      	.footer-logo-divider {width: 57% !important; }
       }</style>
       </head>
       <body style="background-color:#f4f5f9;">
@@ -94,14 +101,14 @@
       
       <!--[if mso | IE]>
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="header-outlook" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div style="Margin:0px auto;max-width:600px;">
+      <div class="header" style="Margin:0px auto;max-width:600px;">
         
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
@@ -129,8 +136,12 @@
           <tr>
             <td style="width:127px;">
               
+        <a href="#" target="_blank">
+          
       <img alt="TakerIM" height="auto" src="https://allkrain.github.io/takerIm/assets/img/logo_taker.png" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="127">
     
+        </a>
+      
             </td>
           </tr>
         </tbody>
@@ -615,9 +626,9 @@
                 
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: separate; width: 276px; line-height: 100%;" width="276">
         <tr>
-          <td align="center" bgcolor="#99cc00" role="presentation" style="box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; border: none; border-radius: 25px; color: #ffffff; cursor: auto; padding: 17px 10px;" valign="middle">
-            <p style="background:#99cc00;color:#ffffff;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:14px;font-weight:normal;line-height:120%;Margin:0;text-decoration:none;text-transform:none;">
-              <a href="#" class="button-text" style="color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-sapcing: .07em; line-height: 16px;">посмотреть</a>
+          <td align="center" bgcolor="#99cc00" role="presentation" style="box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; border: none; border-radius: 25px; color: #ffffff; cursor: auto; height: 50px; padding: 0;" valign="middle" height="50">
+            <p style="border-radius: 8px; background: #99cc00; color: #ffffff; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 120%; Margin: 0; text-decoration: none; text-transform: none;">
+              <a href="#" class="button-text" style="color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-sapcing: .07em; line-height: 16px; border: 17px solid #99cc00; border-radius: 25px;">посмотреть</a>
             </p>
           </td>
         </tr>
@@ -1124,9 +1135,9 @@
                 
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-collapse: separate; line-height: 100%;" width="100%">
         <tr>
-          <td align="center" bgcolor="#99cc00" role="presentation" style="box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; border: none; border-radius: 25px; color: #ffffff; cursor: auto; padding: 17px 10px;" valign="middle">
-            <p style="background:#99cc00;color:#ffffff;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:14px;font-weight:normal;line-height:120%;Margin:0;text-decoration:none;text-transform:none;">
-              <a href="#" class="button-text" tagert="_blank" style="color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-sapcing: .07em; line-height: 16px;">Перейти в профиль</a>
+          <td align="center" bgcolor="#99cc00" role="presentation" style="box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; border: none; border-radius: 25px; color: #ffffff; cursor: auto; height: 50px; padding: 0;" valign="middle" height="50">
+            <p style="border-radius: 8px; background: #99cc00; color: #ffffff; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 120%; Margin: 0; text-decoration: none; text-transform: none;">
+              <a href="#" class="button-text" tagert="_blank" style="color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-sapcing: .07em; line-height: 16px; border: 17px solid #99cc00; border-radius: 25px;">Перейти в профиль</a>
             </p>
           </td>
         </tr>
@@ -1352,14 +1363,14 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="show-desktop-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="footer-top-desktop-outlook" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="show-desktop" style="Margin:0px auto;max-width:600px;">
+      <div class="footer-top-desktop" style="Margin:0px auto;max-width:600px;">
         
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
@@ -1412,11 +1423,23 @@
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td align="left" class="container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
+              <td align="left" class="logo-small footer-container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
                 
-      <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
-        logo
-      </div>
+      <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+        <tbody>
+          <tr>
+            <td style="width:93px;">
+              
+        <a href="#" target="_blank">
+          
+      <img alt="TakerIM" height="auto" src="https://allkrain.github.io/takerIm/assets/img/logo_taker.png" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="93">
+    
+        </a>
+      
+            </td>
+          </tr>
+        </tbody>
+      </table>
     
               </td>
             </tr>
@@ -1438,11 +1461,111 @@
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td align="left" class="container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
+              <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
                 
-      <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
-        socials
-      </div>
+      
+     <!--[if mso | IE]>
+      <table
+         align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+      >
+        <tr>
+      
+              <td>
+            <![endif]-->
+              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                
+      <tr>
+        <td style="padding:0 51px 0 0;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:transparent;border-radius:0;width:24px;">
+            <tr>
+              <td style="font-size:0;height:24px;vertical-align:middle;width:24px;">
+                <a href="https://mjml.io/" target="_blank">
+                    <img height="24" src="https://allkrain.github.io/takerIm/assets/img/vk.png" style="border-radius:0;" width="24">
+                  </a>
+                </td>
+              </tr>
+          </table>
+          
+        </td>
+      </tr>
+    
+              </table>
+            <!--[if mso | IE]>
+              </td>
+            
+              <td>
+            <![endif]-->
+              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                
+      <tr>
+        <td style="padding:0 51px 0 0;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:transparent;border-radius:0;width:24px;">
+            <tr>
+              <td style="font-size:0;height:24px;vertical-align:middle;width:24px;">
+                <a href="https://mjml.io/" target="_blank">
+                    <img height="24" src="https://allkrain.github.io/takerIm/assets/img/fb.png" style="border-radius:0;" width="24">
+                  </a>
+                </td>
+              </tr>
+          </table>
+          
+        </td>
+      </tr>
+    
+              </table>
+            <!--[if mso | IE]>
+              </td>
+            
+              <td>
+            <![endif]-->
+              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                
+      <tr>
+        <td style="padding:0 51px 0 0;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:transparent;border-radius:0;width:24px;">
+            <tr>
+              <td style="font-size:0;height:24px;vertical-align:middle;width:24px;">
+                <a href="https://mjml.io/" target="_blank">
+                    <img height="24" src="https://allkrain.github.io/takerIm/assets/img/yt.png" style="border-radius:0;" width="24">
+                  </a>
+                </td>
+              </tr>
+          </table>
+          
+        </td>
+      </tr>
+    
+              </table>
+            <!--[if mso | IE]>
+              </td>
+            
+              <td>
+            <![endif]-->
+              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                
+      <tr>
+        <td style="padding:0 51px 0 0;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:transparent;border-radius:0;width:24px;">
+            <tr>
+              <td style="font-size:0;height:24px;vertical-align:middle;width:24px;">
+                <a href="https://mjml.io/" target="_blank">
+                    <img height="24" src="https://allkrain.github.io/takerIm/assets/img/it.png" style="border-radius:0;" width="24">
+                  </a>
+                </td>
+              </tr>
+          </table>
+          
+        </td>
+      </tr>
+    
+              </table>
+            <!--[if mso | IE]>
+              </td>
+            
+          </tr>
+        </table>
+      <![endif]-->
+    
     
               </td>
             </tr>
@@ -1516,7 +1639,7 @@
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td class="container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
+              <td class="footer-container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
                 
       <p style="border-top:solid 0.5px #e3e6eb;font-size:1;margin:0px auto;width:100%;">
       </p>
@@ -1608,7 +1731,7 @@
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td align="left" class="container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
+              <td align="left" class="footer-container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
                 
       <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
         <ul class="menu" style="list-style: none; text-align: left; padding: 0;">
@@ -1637,7 +1760,7 @@
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td align="left" class="container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
+              <td align="left" class="footer-container footer-container_right" style="font-size: 0px; word-break: break-word; padding: 0 48px; padding-left: 0;">
                 
       <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
         <ul class="menu" style="list-style: none; text-align: left; padding: 0;">
@@ -1700,14 +1823,14 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="show-mobile-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="footer-top-mobile-outlook" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="show-mobile" style="display: none; width: 0; height: 0; opacity: 0; visibility: hidden; Margin: 0px auto; max-width: 600px;">
+      <div class="footer-top-mobile" style="display: none; width: 0; height: 0; opacity: 0; visibility: hidden; Margin: 0px auto; max-width: 600px;">
         
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
@@ -1741,26 +1864,104 @@
         <tr>
       
             <td
-               style="vertical-align:top;width:600px;"
+               style="width:600px;"
             >
           <![endif]-->
             
-      <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;">
+        <!--[if mso | IE]>
+        <table  role="presentation" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+        
+              <td
+                 style="vertical-align:top;width:162px;"
+              >
+              <![endif]-->
+                
+      <div class="mj-column-per-27 outlook-group-fix footer-logo" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:27%;">
         
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td align="left" class="container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
+              <td align="left" class="logo-small footer-container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
                 
-      <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
-        logo
-      </div>
+      <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+        <tbody>
+          <tr>
+            <td style="width:93px;">
+              
+        <a href="#" target="_blank">
+          
+      <img alt="TakerIM" height="auto" src="https://allkrain.github.io/takerIm/assets/img/logo_taker.png" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="93">
+    
+        </a>
+      
+            </td>
+          </tr>
+        </tbody>
+      </table>
     
               </td>
             </tr>
           
       </table>
     
+      </div>
+    
+              <!--[if mso | IE]>
+              </td>
+              
+              <td
+                 style="vertical-align:top;width:438px;"
+              >
+              <![endif]-->
+                
+      <div class="mj-column-per-73 outlook-group-fix footer-logo-divider" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:73%;">
+        
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+        <tbody>
+          <tr>
+            <td style="vertical-align:top;padding:0;">
+              
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+        
+            <tr>
+              <td style="font-size:0px;padding:17.5px 11px 17.5px 0;word-break:break-word;">
+                
+      <p style="border-top:solid 0.5px #e3e6eb;font-size:1;margin:0px auto;width:100%;">
+      </p>
+      
+      <!--[if mso | IE]>
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 0.5px #e3e6eb;font-size:1;margin:0px auto;width:427px;" role="presentation" width="427px"
+        >
+          <tr>
+            <td style="height:0;line-height:0;">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+      <![endif]-->
+    
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+              <!--[if mso | IE]>
+              </td>
+              
+          </tr>
+          </table>
+        <![endif]-->
       </div>
     
           <!--[if mso | IE]>
@@ -1820,7 +2021,7 @@
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td align="left" class="container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
+              <td align="left" class="footer-container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
                 
       <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
         <ul class="menu" style="list-style: none; text-align: left; padding: 0;">
@@ -1895,7 +2096,7 @@
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td class="container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
+              <td class="footer-container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
                 
       <p style="border-top:solid 0.5px #e3e6eb;font-size:1;margin:0px auto;width:100%;">
       </p>
@@ -1977,11 +2178,111 @@
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td align="left" class="container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
+              <td align="center" class="footer-container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
                 
-      <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
-        socials
-      </div>
+      
+     <!--[if mso | IE]>
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+      >
+        <tr>
+      
+              <td>
+            <![endif]-->
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                
+      <tr>
+        <td style="padding:0 19px;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:transparent;border-radius:0;width:24px;">
+            <tr>
+              <td style="font-size:0;height:24px;vertical-align:middle;width:24px;">
+                <a href="https://mjml.io/" target="_blank">
+                    <img height="24" src="https://allkrain.github.io/takerIm/assets/img/vk.png" style="border-radius:0;" width="24">
+                  </a>
+                </td>
+              </tr>
+          </table>
+          
+        </td>
+      </tr>
+    
+              </table>
+            <!--[if mso | IE]>
+              </td>
+            
+              <td>
+            <![endif]-->
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                
+      <tr>
+        <td style="padding:0 19px;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:transparent;border-radius:0;width:24px;">
+            <tr>
+              <td style="font-size:0;height:24px;vertical-align:middle;width:24px;">
+                <a href="https://mjml.io/" target="_blank">
+                    <img height="24" src="https://allkrain.github.io/takerIm/assets/img/fb.png" style="border-radius:0;" width="24">
+                  </a>
+                </td>
+              </tr>
+          </table>
+          
+        </td>
+      </tr>
+    
+              </table>
+            <!--[if mso | IE]>
+              </td>
+            
+              <td>
+            <![endif]-->
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                
+      <tr>
+        <td style="padding:0 19px;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:transparent;border-radius:0;width:24px;">
+            <tr>
+              <td style="font-size:0;height:24px;vertical-align:middle;width:24px;">
+                <a href="https://mjml.io/" target="_blank">
+                    <img height="24" src="https://allkrain.github.io/takerIm/assets/img/yt.png" style="border-radius:0;" width="24">
+                  </a>
+                </td>
+              </tr>
+          </table>
+          
+        </td>
+      </tr>
+    
+              </table>
+            <!--[if mso | IE]>
+              </td>
+            
+              <td>
+            <![endif]-->
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                
+      <tr>
+        <td style="padding:0 19px;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:transparent;border-radius:0;width:24px;">
+            <tr>
+              <td style="font-size:0;height:24px;vertical-align:middle;width:24px;">
+                <a href="https://mjml.io/" target="_blank">
+                    <img height="24" src="https://allkrain.github.io/takerIm/assets/img/it.png" style="border-radius:0;" width="24">
+                  </a>
+                </td>
+              </tr>
+          </table>
+          
+        </td>
+      </tr>
+    
+              </table>
+            <!--[if mso | IE]>
+              </td>
+            
+          </tr>
+        </table>
+      <![endif]-->
+    
     
               </td>
             </tr>
@@ -2029,14 +2330,14 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="footer-text-outlook" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div style="Margin:0px auto;max-width:600px;">
+      <div class="footer-text" style="Margin:0px auto;max-width:600px;">
         
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
@@ -2057,7 +2358,7 @@
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td align="left" class="text-small container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
+              <td align="left" class="text-small footer-container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
                 
       <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
         <p class="text-small">Вы получили это письмо, потому что являетесь пользователем Taker.im. Вы можете изменить настройки оповещений в <a href="#" class="link" style="color: #7ba300; text-decoration: none; transition: all .3s ease; -webkit-transition: all .3s ease; font-size: inherit; font-weight: inherit; font-style: inherit; line-height: inherit;">личном кабинете</a> или <a href="#" class="link" style="color: #7ba300; text-decoration: none; transition: all .3s ease; -webkit-transition: all .3s ease; font-size: inherit; font-weight: inherit; font-style: inherit; line-height: inherit;">отписаться от рассылки.</a></p>
@@ -2091,14 +2392,14 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="footer-copyright-outlook" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div style="Margin:0px auto;max-width:600px;">
+      <div class="footer-copyright" style="Margin:0px auto;max-width:600px;">
         
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
@@ -2119,7 +2420,7 @@
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td align="left" class="copyright container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
+              <td align="left" class="copyright footer-container" style="font-size: 0px; word-break: break-word; padding: 0 48px;">
                 
       <div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
         &copy; Taker.im, 2018This is the footer
