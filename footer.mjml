@@ -1,0 +1,110 @@
+
+
+<mj-wrapper css-class="show-desktop">
+	<mj-section>
+
+    <mj-group>
+      <mj-column>
+        <mj-text css-class="container">
+          logo
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text css-class="container">
+          socials
+        </mj-text>
+      </mj-column>
+    </mj-group>
+
+  </mj-section>
+  
+  <mj-section>
+    <mj-column>
+      <mj-divider css-class="container" border-color="#e3e6eb"></mj-divider>
+    </mj-column>
+  </mj-section>
+  
+  <mj-section>
+
+    <mj-group>
+      <mj-column>
+        <mj-text css-class="container">
+          <ul class="menu">
+            <li><a href="#" class="link-gray">Проверка продавца</a></li>
+            <li><a href="#" class="link-gray">обзоры</a></li>
+          </ul>
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text css-class="container">
+          <ul class="menu">
+            <li><a href="#" class="link-gray">Статьи</a></li>
+            <li><a href="#" class="link-gray">Форум</a></li>
+          </ul>
+        </mj-text>
+      </mj-column>
+    </mj-group>
+
+  </mj-section>
+</mj-wrapper>
+
+<mj-wrapper css-class="show-mobile">
+	<mj-section>
+
+    <mj-column>
+      <mj-text css-class="container">
+        logo
+      </mj-text>
+    </mj-column>
+
+  </mj-section>
+  
+  <mj-section>
+
+    <mj-column>
+      <mj-text css-class="container">
+        <ul class="menu">
+          <li><a href="#" class="link-gray">Проверка продавца</a></li>
+          <li><a href="#" class="link-gray">обзоры</a></li>
+          <li><a href="#" class="link-gray">Статьи</a></li>
+          <li><a href="#" class="link-gray">Форум</a></li>
+        </ul>
+      </mj-text>
+    </mj-column>
+
+  </mj-section>
+  
+  <mj-section>
+    <mj-column>
+      <mj-divider css-class="container" border-color="#e3e6eb"></mj-divider>
+    </mj-column>
+  </mj-section>
+  
+  <mj-section>
+
+    <mj-column>
+      <mj-text css-class="container">
+        socials
+      </mj-text>
+    </mj-column>
+
+  </mj-section>
+</mj-wrapper>
+
+<mj-section>
+
+  <mj-column>
+    <mj-text css-class="text-small container" align="left">
+      <p class="text-small">Вы получили это письмо, потому что являетесь пользователем Taker.im. Вы можете изменить настройки оповещений в <a href="#" class="link">личном кабинете</a> или <a href="#" class="link">отписаться от рассылки.</a></p>
+    </mj-text>
+  </mj-column>
+
+</mj-section>
+<mj-section>
+
+  <mj-column>
+    <mj-text css-class="copyright container" align="left">&copy; Taker.im, 2018This is the footer
+    </mj-text>
+  </mj-column>
+
+</mj-section>

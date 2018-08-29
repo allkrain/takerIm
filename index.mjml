@@ -1,0 +1,179 @@
+<mjml>
+
+  <mj-head>
+
+    <mj-attributes>
+      <mj-image alt=""></mj-image>
+      <mj-section padding="0"></mj-section>
+      <mj-column></mj-column>
+      <mj-button background-color="#99cc00" border-radius="25px" height="50px" font-size="14px" padding="0"></mj-button>
+      <mj-divider border-color="#eeeff4" border-style="solid" border-width="0.5px"></mj-divider>
+    </mj-attributes>
+    <mj-style inline="inline">
+      .container { padding: 0 48px !important; }
+      .news-container { padding: 0 24px 0 48px !important; }
+      .show-mobile { display: none; width: 0; height: 0; opacity: 0; visibility: hidden; }
+      .button td { box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; }
+      .button table { width: 100%; }
+      .button-text { color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-sapcing: .07em; line-height: 1em; }
+      .text-bubble {padding: 0; border-width: 0; font-size: 0; margin-right: 8px; }
+      .news-title {font-size: 20px; line-height: 1.4em; color: #1f1f22; font-weight: 400; }
+      .news-text {font-size: 17px; line-height: 1.53em; color: #6e768d; letter-spacing: 0.005em; }
+      .white { background-color: white; }
+      .gray { background-color: #edeff4; }
+      .news-link { text-decoration: none; }
+      .news-content { width: 77%; }
+      .news-image { width: 23%;}
+      .news-img { padding-right: 48px; }
+      .link {font-size: inherit !important; font-weight: inherit !important; font-style: inherit !important; line-height: inherit !important; color: #7ba300; text-decoration: none; transition: all .3s ease; -webkit-transition: all .3s ease; }
+      .menu { list-style: none; text-align: left; padding: 0; }
+      .menu li { text-align: left; }
+    </mj-style>
+		<mj-style> 
+      @media all and (max-width: 600px) {
+      	.page { padding: 0 11px }
+      	.logo td { width: 93px !important; }
+      	.logo img { width: 93px !important; }
+      	.container { padding: 0 24px !important; }
+      	.news-container { padding: 0 12px 0 24px !important; }
+        .greeting-title { font-size: 24px !important; line-height: 1.17em !important; }
+        .news-title {font-size: 17px !important; line-height: 1.53em !important; }
+        .news-img { padding-right: 24px !important; }
+      	.show-mobile { display: block !important; width: 100% !important; height: auto !important; opacity: 1 !important; visibility: visible !important; }
+      	.show-desktop { display: none !important; width: 0 !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; }
+      	.profile-col { width: 10% !important; }
+      	.profile-main {width: 80% !important; }
+      	.button_wide td { border-radius: 3px !important; }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f5f9" css-class="page">
+
+    <mj-include path="./header.mjml" />
+    <mj-section>
+
+      <mj-column>
+        <mj-text align="center" font-size="33" line-height="1.24em" font-weight="300" color="#1f1f22" css-class="greeting container">
+          <p style="font-size: 33px; line-height: 1.24em; font-weight: 300;" class="greeting-title">Привет, <b style="font-weight: 500;">Simb!</b><br> Вот что ты пропустил пока тебя не было на сайте</p>
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+      
+      
+		<mj-wrapper css-class="news">
+      <mj-section>
+        <mj-group css-class="white">
+          <mj-column css-class="news-content" width="77%">
+            <mj-text align="left" css-class="news-container">
+              <a href="#" class="news-link" tagert="_blank">
+                <p class="news-text">Тема</p>
+                <h3 class="news-title">Самый полный обзор Apple iPhone 7</p>
+              </a>
+            </mj-text>
+          </mj-column>
+          <mj-column css-class="news-image" width="23%">
+            <mj-image src="assets/img/mes.png" width="44" height="44" alt="" css-class="news-img" align="right" padding="0 48px 0 0"></mj-image>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <mj-section>
+        <mj-column css-class="white">
+          <mj-divider css-class="container"></mj-divider>
+        </mj-column>
+      </mj-section>
+      
+      <mj-section>
+        <mj-group css-class="white">
+          <mj-column css-class="news-content" width="77%">
+            <mj-text align="left" css-class="news-container">
+              <a href="#" class="news-link" tagert="_blank">
+                <h3 class="news-title">Great_Deal</h3>
+                <p class="news-text"><img width="14" height="14" src="assets/img/messages.png" alt="" class="text-bubble">Новое сообщение</p>
+              </a>
+            </mj-text>
+          </mj-column>
+          <mj-column css-class="news-image" width="23%">
+            <mj-image src="https://yadi.sk/i/LXGQMwjt3afhtc" width="44" height="44" border-radius="22px" alt="" css-class="news-img" align="right" padding="0 48px 0 0"></mj-image>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+        
+      <mj-section background-color="transparent" background-url="assets/img/bg-button.png" background-size="50px 50px" background-repeat="repeat-x">
+        <mj-column>
+          <mj-button css-class="button button_wide" width="276px"><a href="#" class="button-text">посмотреть</a></mj-button>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>     
+    
+      
+    <mj-wrapper css-class="rating">      
+      <mj-section>
+        <mj-column css-class="gray">
+          <mj-image css-class="rating-image" src="assets/img/rating.png"></mj-image>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column css-class="gray">
+          <mj-text css-class="container" align="center">
+            <h3 class="text-title">Улучшай свой рейтинг!</h3>
+            <p class="text-main">Пиши еще большое обзоров, улучшай качество материала, получай пользовательское признание и как следствие твой рейтинг будет максимальным!</p>
+            <a href="#" class="link-gray">подробнее о рейтинге</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+      
+    
+    <mj-wrapper css-class="achievement">      
+      <mj-section>
+        <mj-column css-class="gray">
+          <mj-image css-class="achievement-image" src="assets/img/achievement.png"></mj-image>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column css-class="gray">
+          <mj-text css-class="container" align="center">
+            <h3 class="text-title">Не останавливайся на достигнутом!</h3>
+            <p class="text-main">Мотивационный текст о необходимости достиженй  — важная часть сообщества Beeb. Твое мнение полезно другим </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    
+    <mj-section css-class="profile">
+      <mj-group>
+        <mj-column width="27%" padding="0" css-class="profile-col">
+            <mj-divider border-color="#e3e6eb" padding="24.5px 0"></mj-divider>
+          </mj-column>
+        <mj-column width="46%" css-class="profile-main">
+          <mj-button css-class="button"><a href="#" class="button-text" tagert="_blank">Перейти в профиль</a></mj-button>
+        </mj-column>
+        <mj-column width="27%" padding="0" css-class="profile-col">
+          <mj-divider border-color="#e3e6eb" padding="24.5px 0"></mj-divider>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+      
+    <mj-wrapper css-class="guard">
+      <mj-section css-class="gray">
+        <mj-column css-class="gaurd-symbol" width="21%">
+          <mj-image src="assets/img/guard.png" width="30" height="44" alt="" css-class="guard-img" align="right" padding="0 48px 0 0"></mj-image>
+        </mj-column>
+        <mj-column css-class="gaurd-content" width="79%">
+          <mj-text align="left" css-class="guard-container">
+            <p class="text-main">Мы заметили подозрительную активность в вашем профиле. Не переживай, я рекомендую тебе <a href="#" class="link" tagert="_blank">изменить пароль</a> или <a href="#" class="link" tagert="_blank">включить двухфакторную авторизацию.</a></p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-include path="./footer.mjml" />
+
+  </mj-body>
+
+</mjml>
