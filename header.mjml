@@ -1,7 +1,7 @@
 <mj-section css-class="header">
 
   <mj-column>
-    <mj-image src="https://allkrain.github.io/takerIm/assets/img/logo_taker.png" width="127" alt="TakerIM" css-class="logo container" href="#"></mj-image>
+    <mj-image src="https://allkrain.github.io/takerIm/assets/img/logo_taker.png" width="127" alt="TakerIM" css-class="logo" href="#"></mj-image>
   </mj-column>
 
 </mj-section>

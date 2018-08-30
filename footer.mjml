@@ -3,19 +3,19 @@
 <mj-wrapper css-class="footer-top-desktop">
 	<mj-section>
 
-    <mj-group>
+    <mj-group css-class="footer-desktop-socials">
       <mj-column>
         <mj-image src="https://allkrain.github.io/takerIm/assets/img/logo_taker.png" width="93" alt="TakerIM" css-class="logo-small footer-container" href="#" align="left" padding></mj-image>
       </mj-column>
       <mj-column>
-        <mj-social font-size="0" icon-size="24px" mode="horizontal" align="left" border-radius="0" inner-padding="0 51px 0 0" padding="0">
-          <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/vk.png" border-radius="0" icon-size="24px">
+        <mj-social font-size="0" icon-size="24px" mode="horizontal" align="left" border-radius="0" inner-padding="6px 51px 6px 0" padding="0">
+          <mj-social-element href="#" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/vk.png" border-radius="0" icon-size="24px">
           </mj-social-element>
-          <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/fb.png" border-radius="0" icon-size="24px">
+          <mj-social-element href="#" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/fb.png" border-radius="0" icon-size="24px">
           </mj-social-element>
-          <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/yt.png" border-radius="0" icon-size="24px">
+          <mj-social-element href="#" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/yt.png" border-radius="0" icon-size="24px">
           </mj-social-element>
-          <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/it.png" border-radius="0" icon-size="24px">
+          <mj-social-element href="#" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/it.png" border-radius="0" icon-size="24px">
           </mj-social-element>
         </mj-social>
       </mj-column>
@@ -31,20 +31,20 @@
   
   <mj-section>
 
-    <mj-group>
+    <mj-group css-class="footer-desktop-menu">
       <mj-column>
         <mj-text css-class="footer-container">
           <ul class="menu">
-            <li><a href="#" class="link-gray">Проверка продавца</a></li>
-            <li><a href="#" class="link-gray">обзоры</a></li>
+            <li><a href="#" class="link-gray" target="_blank">Проверка продавца</a></li>
+            <li><a href="#" class="link-gray" target="_blank">обзоры</a></li>
           </ul>
         </mj-text>
       </mj-column>
       <mj-column>
         <mj-text css-class="footer-container footer-container_right">
           <ul class="menu">
-            <li><a href="#" class="link-gray">Статьи</a></li>
-            <li><a href="#" class="link-gray">Форум</a></li>
+            <li><a href="#" class="link-gray" target="_blank">Статьи</a></li>
+            <li><a href="#" class="link-gray" target="_blank">Форум</a></li>
           </ul>
         </mj-text>
       </mj-column>
@@ -55,7 +55,7 @@
 
 <mj-wrapper css-class="footer-top-mobile">
 	<mj-section>
-    <mj-group>
+    <mj-group css-class="footer-mobile-logo">
 
       <mj-column width="27%" css-class="footer-logo">
         <mj-image src="https://allkrain.github.io/takerIm/assets/img/logo_taker.png" width="93" alt="TakerIM" css-class="logo-small footer-container" href="#" align="left"></mj-image>
@@ -68,15 +68,15 @@
 
   </mj-section>
   
-  <mj-section>
+  <mj-section css-class="footer-mobile-menu">
 
     <mj-column>
       <mj-text css-class="footer-container">
         <ul class="menu">
-          <li><a href="#" class="link-gray">Проверка продавца</a></li>
-          <li><a href="#" class="link-gray">обзоры</a></li>
-          <li><a href="#" class="link-gray">Статьи</a></li>
-          <li><a href="#" class="link-gray">Форум</a></li>
+          <li><a href="#" class="link-gray" target="_blank">Проверка продавца</a></li>
+          <li><a href="#" class="link-gray" target="_blank">обзоры</a></li>
+          <li><a href="#" class="link-gray" target="_blank">Статьи</a></li>
+          <li><a href="#" class="link-gray" target="_blank">Форум</a></li>
         </ul>
       </mj-text>
     </mj-column>
@@ -89,17 +89,17 @@
     </mj-column>
   </mj-section>
   
-  <mj-section>
+  <mj-section css-class="footer-mobile-socials">
 
     <mj-column>
       <mj-social font-size="0" icon-size="24px" mode="horizontal" align="center" css-class="footer-container" border-radius="0" inner-padding="0 19px">
-        <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/vk.png" border-radius="0">
+        <mj-social-element href="#" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/vk.png" border-radius="0">
         </mj-social-element>
-        <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/fb.png" border-radius="0">
+        <mj-social-element href="#" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/fb.png" border-radius="0">
         </mj-social-element>
-        <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/yt.png" border-radius="0">
+        <mj-social-element href="#" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/yt.png" border-radius="0">
         </mj-social-element>
-        <mj-social-element href="https://mjml.io/" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/it.png" border-radius="0">
+        <mj-social-element href="#" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/it.png" border-radius="0">
         </mj-social-element>
       </mj-social>
     </mj-column>
@@ -111,7 +111,7 @@
 
   <mj-column>
     <mj-text css-class="text-small footer-container" align="left">
-      <p class="text-small">Вы получили это письмо, потому что являетесь пользователем Taker.im. Вы можете изменить настройки оповещений в <a href="#" class="link">личном кабинете</a> или <a href="#" class="link">отписаться от рассылки.</a></p>
+      <p class="text-small">Вы получили это письмо, потому что являетесь пользователем Taker.im. Вы можете изменить настройки оповещений в <a href="#" class="link" target="_blank">личном кабинете</a> или <a href="#" class="link" target="_blank">отписаться от рассылки.</a></p>
     </mj-text>
   </mj-column>
 

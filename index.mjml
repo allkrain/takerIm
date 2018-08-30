@@ -1,27 +1,40 @@
 <mjml>
 
   <mj-head>
+    <mj-font name="effra" href="https://use.typekit.net/psv2uqc.css" />
 
     <mj-attributes>
       <mj-image alt=""></mj-image>
       <mj-section padding="0"></mj-section>
       <mj-column></mj-column>
       <mj-button background-color="#99cc00" border-radius="25px" font-size="14px" padding="0" height="50px"></mj-button>
-      <mj-divider border-color="#eeeff4" border-style="solid" border-width="0.5px"></mj-divider>
+      <mj-divider border-color="#eeeff4" border-style="solid" border-width="1px"></mj-divider>
+      <mj-wrapper padding="0"></mj-wrapper>
     </mj-attributes>
     <mj-style inline="inline">
-      a, b, em, strong, i, p, blocquote, td, div, span, h1, h2, h3, h4, h5, h6 { font-family: Effra, Ubuntu, Arial, Helvetica, sans-serif; }
+      a, b, em, strong, i, p, blocquote, td, div, span, h1, h2, h3, h4, h5, h6 { font-family: effra, Arial, Helvetica, sans-serif; }
       a, .button { transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; }
+      p, h1, h2, h3, h4, h5, h6 { margin: 0; }
+      table { border-collapse: collapse !important; border-spacing: 0 !important; }
+      .section {padding-top: 12px; padding-bottom: 12px; }
+      .news { padding-bottom: 36px; }
       .container { padding: 0 48px !important; }
+      .logo { padding: 72px 48px 26px !important; }
+      .greeting { padding-bottom: 29px !important; }
       .news-container { padding: 0 24px 0 48px !important; }
+      .news-item { padding-top: 29px; padding-bottom: 31px; }
+      .section-image { padding: 48px 48px 0 !important; }
+      .section-content { padding: 36px 48px 41px !important; }
+      .rating .section-content { padding-bottom: 27px !important; }
+      .rating .text-main { margin-bottom: 42px; }
       .footer-container { padding: 0 48px !important; }
       .footer-container_right {padding-left: 0 !important;}
-      .guard-container { padding: 0 48px 0 0 !important; }
-      .footer-top-mobile { display: none; width: 0; height: 0; opacity: 0; visibility: hidden; }
+      .guard-container { padding: 0 48px !important; }
+      .footer-top-mobile { display: none !important; width: 0; height: 0; opacity: 0; visibility: hidden; mso-hide: all; }
       .button td { box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; padding: 0 !important; }
       .button table { width: 100%; }
       .button p { border-radius: 8px; }
-      .button-text { color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-sapcing: .07em; line-height: 16px; border: 17px solid #99cc00; border-radius: 25px; }
+      .button-text { color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-sapcing: 0.07em; line-height: 16px; border: 16px solid #99cc00; border-radius: 25px; }
       .text-bubble {padding: 0; border-width: 0; font-size: 0; margin-right: 8px; }
       .news-title {font-size: 20px; line-height: 1.4em; color: #1f1f22; font-weight: 400; }
       .news-text {font-size: 17px; line-height: 1.53em; color: #6e768d; letter-spacing: 0.005em; }
@@ -30,43 +43,63 @@
       .news-link { text-decoration: none; }
       .news-content { width: 77%; }
       .news-image { width: 23%;}
-      .news-img { padding-right: 48px; }
+      .guard-block { padding-top: 30px; padding-bottom: 30px; }
+      .guard-symbol { max-width: 78px; padding: 0; }
+      .guard-img { padding: 0 0 0 48px; }
+      .news-img { padding-right: 48px; padding-top: 7px; }
       .link {font-size: inherit !important; font-weight: inherit !important; font-style: inherit !important; line-height: inherit !important; color: #7ba300; text-decoration: none; transition: all .3s ease; -webkit-transition: all .3s ease; }
       .menu { list-style: none; text-align: left; padding: 0; }
-      .menu li { text-align: left; }
-      .text-title { font-size: 22px; font-weight: 400; color: #1f1f22; line-height: 1.36; }
+      .menu li { text-align: left; margin-bottom: 33px; }
+      .text-title { font-size: 22px; font-weight: 400; color: #1f1f22; line-height: 1.36; margin-bottom: 13px; }
       .text-main { font-size: 17px; font-weight: 400; line-height: 1.53; color: #6e768d; letter-spacing: 0.006em }
-      .text-small { font-size: 15px; font-weight: 400; line-height: 1.6; letter-spacing: 0.007em; color: #8c95ae; }	
+      .text-small { font-size: 15px; font-weight: 400; line-height: 1.6; letter-spacing: 0.007em; color: #8c95ae; }
+      .copyright { padding-top: 30px !important; padding-bottom: 65px !important; }
       .copyright-text { font-size: 17px; font-weight: 400; line-height: 1.53; letter-spacing: 0.006em; color: #8c95ae; }
       .link-gray { font-size: 14px; font-weight: 500; line-height: 1.2em; letter-spacing: 0.07em; text-decoration: none; text-transform: uppercase; color: #6e768d; }
+      .footer-desktop-socials { padding: 40px 0 43px; }
+      .footer-desktop-menu { padding: 22px 0 25px; }
+      .footer-mobile-logo { padding: 23px 0 17px !important; }
+      .footer-mobile-socials { padding: 24px 0 !important; }
     </mj-style>
 		<mj-style>
       .button:hover, .link:hover, .link-gray:hover, a:hover { opacity: 0.8; }
       
-      @media all and (max-width: 600px) {
+      @media screen and (max-width: 599px) {
       	.page { padding: 0 11px }
+      	.section { padding-top: 6px !important; padding-bottom: 6px !important; }
+      	.profile { padding-top: 18px !important; padding-bottom: 18px !important; }
+      	.logo { padding: 30px 24px 18px !important; }
       	.logo td { width: 93px !important; }
       	.logo img { width: 93px !important; }
       	.container { padding: 0 24px !important; }
       	.guard-container { padding: 0 24px !important; }
       	.news-container { padding: 0 11px 0 24px !important; }
       	.footer-container { padding: 0 12px !important; }
+      	.greeting { padding-bottom: 26px !important; }
         .greeting-title { font-size: 24px !important; line-height: 1.17em !important; }
+        .news-item { padding-top: 18px !important; padding-bottom: 23px !important; }
         .news-title {font-size: 17px !important; line-height: 1.53em !important; }
-        .news-img { padding-right: 24px !important; }
-      	.footer-top-mobile { display: block !important; width: 100% !important; height: auto !important; opacity: 1 !important; visibility: visible !important; }
-      	.footer-top-desktop { display: none !important; width: 0 !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; }
+        .news-img { padding-right: 24px !important; padding-top: 5px !important; }
+      	.section-content { padding: 24px 24px 30px !important; }
+      	.rating .section-content { padding-bottom: 24px !important; }
+      	.footer-top-mobile { display: block !important; width: 100% !important; height: auto !important; opacity: 1 !important; visibility: visible !important; mso-hide: none !important;}
+      	.footer-top-desktop { display: none !important; width: 0 !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; mso-hide: all !important; }
       	.profile-col { width: 10% !important; }
       	.profile-main {width: 80% !important; }
       	.button_wide td { border-radius: 3px !important; }
       	.button_wide table { width: 100% !important; }
+      	.button-text { border-width: 15px !important; }
       	.rating-image img { width: 215px !important; height: 30px !important; }
-      	.guard-img { text-align: center !important; }
       	.guard-text { text-align: center !important;}
-      	.text-title { font-size: 20px !important; line-height: 1.4 !important; }
+      	.text-title { font-size: 20px !important; line-height: 1.4 !important; margin-bottom: 3px !important; }
+      	.section-image { padding: 30px 24px 0 !important; }
+      	.rating .text-main { margin-bottom: 24px !important; }
+      	.guard-symbol { max-width: none !important; }
+      	.guard-img { padding: 0 24px 24px !important; }
+      	.copyright { padding-top: 24px !important; padding-bottom: 30px !important; }
       }
       
-      @media all and (max-width: 480px) {
+      @media screen and (max-width: 480px) {
       	.footer-logo { width: 43% !important;}
       	.footer-logo-divider {width: 57% !important; }
       }
@@ -87,82 +120,82 @@
     </mj-section>
       
       
-		<mj-wrapper css-class="news">
-      <mj-section>
-        <mj-group css-class="white">
+		<mj-wrapper css-class="section news">
+      <mj-section background-color="#ffffff">
+        <mj-group css-class="news-item white" background-color="#ffffff">
           <mj-column css-class="news-content" width="77%">
             <mj-text align="left" css-class="news-container">
-              <a href="#" class="news-link" tagert="_blank">
+              <a href="#" class="news-link" target="_blank">
                 <p class="news-text">Тема</p>
                 <h3 class="news-title">Самый полный обзор Apple iPhone 7</p>
               </a>
             </mj-text>
           </mj-column>
           <mj-column css-class="news-image" width="23%">
-            <mj-image src="https://allkrain.github.io/takerIm/assets/img/mes.png" width="44" height="44" alt="" css-class="news-img" align="right" padding="0 48px 0 0"></mj-image>
+            <mj-image src="https://allkrain.github.io/takerIm/assets/img/mes.png" width="44" height="44" alt="" css-class="news-img" align="right" padding="7px 48px 0 0"></mj-image>
           </mj-column>
         </mj-group>
       </mj-section>
 
-      <mj-section>
-        <mj-column css-class="white">
+      <mj-section background-color="#ffffff">
+        <mj-column css-class="white"  background-color="#ffffff">
           <mj-divider css-class="container"></mj-divider>
         </mj-column>
       </mj-section>
       
-      <mj-section>
-        <mj-group css-class="white">
+      <mj-section background-color="#ffffff">
+        <mj-group css-class="news-item white"  background-color="#ffffff">
           <mj-column css-class="news-content" width="77%">
             <mj-text align="left" css-class="news-container">
-              <a href="#" class="news-link" tagert="_blank">
+              <a href="#" class="news-link" target="_blank">
                 <h3 class="news-title">Great_Deal</h3>
                 <p class="news-text"><img width="14" height="14" src="https://allkrain.github.io/takerIm/assets/img/messages.png" alt="" class="text-bubble">Новое сообщение</p>
               </a>
             </mj-text>
           </mj-column>
           <mj-column css-class="news-image" width="23%">
-            <mj-image src="https://allkrain.github.io/takerIm/assets/img/avatar.jpg" width="44" height="44" border-radius="22px" alt="" css-class="news-img" align="right" padding="0 48px 0 0"></mj-image>
+            <mj-image src="https://allkrain.github.io/takerIm/assets/img/avatar.jpg" width="44" height="44" border-radius="22px" alt="" css-class="news-img" align="right" padding="7px 48px 0 0"></mj-image>
           </mj-column>
         </mj-group>
       </mj-section>
         
       <mj-section background-color="transparent" background-url="https://allkrain.github.io/takerIm/assets/img/bg-button.png" background-size="50px 50px" background-repeat="repeat-x">
         <mj-column>
-          <mj-button css-class="button button_wide" width="276px"><a href="#" class="button-text">посмотреть</a></mj-button>
+          <mj-button css-class="button button_wide" width="276px"><a href="#" class="button-text" target="_blank">посмотреть</a></mj-button>
         </mj-column>
       </mj-section>
     </mj-wrapper>     
     
       
-    <mj-wrapper css-class="rating">      
-      <mj-section>
+    <mj-wrapper css-class="section rating">      
+      <mj-section background-color="#edeff4">
         <mj-column css-class="gray">
-          <mj-image css-class="rating-image" src="https://allkrain.github.io/takerIm/assets/img/rating.png" width="269" height="38"></mj-image>
+          <mj-image css-class="rating-image section-image" src="https://allkrain.github.io/takerIm/assets/img/rating.png" width="269" height="38" align="center"></mj-image>
         </mj-column>
       </mj-section>
 
-      <mj-section>
+      <mj-section background-color="#edeff4">
         <mj-column css-class="gray">
-          <mj-text css-class="container" align="center">
+          <mj-text css-class="section-content" align="center">
             <h3 class="text-title">Улучшай свой рейтинг!</h3>
             <p class="text-main">Пиши еще большое обзоров, улучшай качество материала, получай пользовательское признание и как следствие твой рейтинг будет максимальным!</p>
-            <a href="#" class="link-gray">подробнее о рейтинге</a>
+            <a href="#" class="link-gray" target="_blank">подробнее о рейтинге</a>
           </mj-text>
         </mj-column>
       </mj-section>
     </mj-wrapper>
       
     
-    <mj-wrapper css-class="achievement">      
-      <mj-section>
+    <mj-wrapper css-class="section achievement">      
+      <mj-section background-color="#edeff4">
         <mj-column css-class="gray">
-          <mj-image css-class="achievement-image" src="https://allkrain.github.io/takerIm/assets/img/achievement.png" width="222" height="50"></mj-image>
+          <mj-image css-class="achievement-image section-image" src="https://allkrain.github.io/takerIm/assets/img/achievement.png" width="222" height="50" align="center"></mj-image>
         </mj-column>
       </mj-section>
 
-      <mj-section>
+      <mj-section background-color="#edeff4">
         <mj-column css-class="gray">
-          <mj-text css-class="container" align="center">
+          <mj-text css-class="section-content" align="center">
             <h3 class="text-title">Не останавливайся на достигнутом!</h3>
             <p class="text-main">Мотивационный текст о необходимости достиженй  — важная часть сообщества Beeb. Твое мнение полезно другим </p>
           </mj-text>
@@ -170,13 +203,13 @@
       </mj-section>
     </mj-wrapper>
     
-    <mj-section css-class="profile">
+    <mj-section css-class="section profile">
       <mj-group>
         <mj-column width="27%" padding="0" css-class="profile-col">
             <mj-divider border-color="#e3e6eb" padding="24.5px 0"></mj-divider>
           </mj-column>
         <mj-column width="46%" css-class="profile-main">
-          <mj-button css-class="button"><a href="#" class="button-text" tagert="_blank">Перейти в профиль</a></mj-button>
+          <mj-button css-class="button"><a href="#" class="button-text" target="_blank">Перейти в профиль</a></mj-button>
         </mj-column>
         <mj-column width="27%" padding="0" css-class="profile-col">
           <mj-divider border-color="#e3e6eb" padding="24.5px 0"></mj-divider>
@@ -184,14 +217,14 @@
       </mj-group>
     </mj-section>
       
-    <mj-wrapper css-class="guard">
-      <mj-section css-class="gray">
-        <mj-column css-class="gaurd-symbol" width="21%">
-          <mj-image src="https://allkrain.github.io/takerIm/assets/img/guard.png" width="30" height="44" alt="" css-class="guard-img container" align="center"></mj-image>
+    <mj-wrapper css-class="section guard">
+      <mj-section css-class="gray guard-block" background-color="#edeff4">
+        <mj-column css-class="guard-symbol" width="13%">
+          <mj-image src="https://allkrain.github.io/takerIm/assets/img/guard.png" width="30" height="44" alt="" css-class="guard-img" padding="5px 0 24px 48px" align="center"></mj-image>
         </mj-column>
-        <mj-column css-class="gaurd-content" width="79%">
+        <mj-column css-class="guard-content" width="87%">
           <mj-text css-class="guard-container" align="left">
-            <p class="text-main guard-text">Мы заметили подозрительную активность в вашем профиле. Не переживай, я рекомендую тебе <a href="#" class="link" tagert="_blank">изменить пароль</a> или <a href="#" class="link" tagert="_blank">включить двухфакторную авторизацию.</a></p>
+            <p class="text-main guard-text">Мы заметили подозрительную активность в вашем профиле. Не переживай, я рекомендую тебе <a href="#" class="link" target="_blank">изменить пароль</a> или <a href="#" class="link" target="_blank">включить двухфакторную авторизацию.</a></p>
           </mj-text>
         </mj-column>
       </mj-section>
