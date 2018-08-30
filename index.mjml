@@ -30,7 +30,7 @@
       .footer-container { padding: 0 48px !important; }
       .footer-container_right {padding-left: 0 !important;}
       .guard-container { padding: 0 48px !important; }
-      .footer-top-mobile { display: none !important; width: 0; height: 0; opacity: 0; visibility: hidden; mso-hide: all; }
+      .footer-top-mobile { display: none; width: 0; height: 0; overflow: hidden; float: none; visibility: hidden; border: none; font-size: 0; max-height: 0; mso-hide: all; }
       .button td { box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; padding: 0 !important; }
       .button table { width: 100%; }
       .button p { border-radius: 8px; }
@@ -82,14 +82,14 @@
         .news-img { padding-right: 24px !important; padding-top: 5px !important; }
       	.section-content { padding: 24px 24px 30px !important; }
       	.rating .section-content { padding-bottom: 24px !important; }
-      	.footer-top-mobile { display: block !important; width: 100% !important; height: auto !important; opacity: 1 !important; visibility: visible !important; mso-hide: none !important;}
+      	.footer-top-mobile { display: block !important; width: 100% !important; height: auto !important; overflow: visible !important; float: none !important; visibility: visible !important; border: none !important; }
       	.footer-top-desktop { display: none !important; width: 0 !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; mso-hide: all !important; }
       	.profile-col { width: 10% !important; }
       	.profile-main {width: 80% !important; }
       	.button_wide td { border-radius: 3px !important; }
       	.button_wide table { width: 100% !important; }
       	.button-text { border-width: 15px !important; }
-      	.rating-image img { width: 215px !important; height: 30px !important; }
+      	.rating-image img { width: 215px !important; height: 30px !important; margin: 0 auto; }
       	.guard-text { text-align: center !important;}
       	.text-title { font-size: 20px !important; line-height: 1.4 !important; margin-bottom: 3px !important; }
       	.section-image { padding: 30px 24px 0 !important; }
