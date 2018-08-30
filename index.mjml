@@ -10,10 +10,13 @@
       <mj-divider border-color="#eeeff4" border-style="solid" border-width="0.5px"></mj-divider>
     </mj-attributes>
     <mj-style inline="inline">
+      a, b, em, strong, i, p, blocquote, td, div, span, h1, h2, h3, h4, h5, h6 { font-family: Effra, Ubuntu, Arial, Helvetica, sans-serif; }
+      a, .button { transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; }
       .container { padding: 0 48px !important; }
       .news-container { padding: 0 24px 0 48px !important; }
       .footer-container { padding: 0 48px !important; }
       .footer-container_right {padding-left: 0 !important;}
+      .guard-container { padding: 0 48px 0 0 !important; }
       .footer-top-mobile { display: none; width: 0; height: 0; opacity: 0; visibility: hidden; }
       .button td { box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; padding: 0 !important; }
       .button table { width: 100%; }
@@ -31,13 +34,21 @@
       .link {font-size: inherit !important; font-weight: inherit !important; font-style: inherit !important; line-height: inherit !important; color: #7ba300; text-decoration: none; transition: all .3s ease; -webkit-transition: all .3s ease; }
       .menu { list-style: none; text-align: left; padding: 0; }
       .menu li { text-align: left; }
+      .text-title { font-size: 22px; font-weight: 400; color: #1f1f22; line-height: 1.36; }
+      .text-main { font-size: 17px; font-weight: 400; line-height: 1.53; color: #6e768d; letter-spacing: 0.006em }
+      .text-small { font-size: 15px; font-weight: 400; line-height: 1.6; letter-spacing: 0.007em; color: #8c95ae; }	
+      .copyright-text { font-size: 17px; font-weight: 400; line-height: 1.53; letter-spacing: 0.006em; color: #8c95ae; }
+      .link-gray { font-size: 14px; font-weight: 500; line-height: 1.2em; letter-spacing: 0.07em; text-decoration: none; text-transform: uppercase; color: #6e768d; }
     </mj-style>
-		<mj-style> 
+		<mj-style>
+      .button:hover, .link:hover, .link-gray:hover, a:hover { opacity: 0.8; }
+      
       @media all and (max-width: 600px) {
       	.page { padding: 0 11px }
       	.logo td { width: 93px !important; }
       	.logo img { width: 93px !important; }
       	.container { padding: 0 24px !important; }
+      	.guard-container { padding: 0 24px !important; }
       	.news-container { padding: 0 11px 0 24px !important; }
       	.footer-container { padding: 0 12px !important; }
         .greeting-title { font-size: 24px !important; line-height: 1.17em !important; }
@@ -49,6 +60,10 @@
       	.profile-main {width: 80% !important; }
       	.button_wide td { border-radius: 3px !important; }
       	.button_wide table { width: 100% !important; }
+      	.rating-image img { width: 215px !important; height: 30px !important; }
+      	.guard-img { text-align: center !important; }
+      	.guard-text { text-align: center !important;}
+      	.text-title { font-size: 20px !important; line-height: 1.4 !important; }
       }
       
       @media all and (max-width: 480px) {
@@ -122,7 +137,7 @@
     <mj-wrapper css-class="rating">      
       <mj-section>
         <mj-column css-class="gray">
-          <mj-image css-class="rating-image" src="https://allkrain.github.io/takerIm/assets/img/rating.png"></mj-image>
+          <mj-image css-class="rating-image" src="https://allkrain.github.io/takerIm/assets/img/rating.png" width="269" height="38"></mj-image>
         </mj-column>
       </mj-section>
 
@@ -141,7 +156,7 @@
     <mj-wrapper css-class="achievement">      
       <mj-section>
         <mj-column css-class="gray">
-          <mj-image css-class="achievement-image" src="https://allkrain.github.io/takerIm/assets/img/achievement.png"></mj-image>
+          <mj-image css-class="achievement-image" src="https://allkrain.github.io/takerIm/assets/img/achievement.png" width="222" height="50"></mj-image>
         </mj-column>
       </mj-section>
 
@@ -172,11 +187,11 @@
     <mj-wrapper css-class="guard">
       <mj-section css-class="gray">
         <mj-column css-class="gaurd-symbol" width="21%">
-          <mj-image src="https://allkrain.github.io/takerIm/assets/img/guard.png" width="30" height="44" alt="" css-class="guard-img" align="right" padding="0 48px 0 0"></mj-image>
+          <mj-image src="https://allkrain.github.io/takerIm/assets/img/guard.png" width="30" height="44" alt="" css-class="guard-img container" align="center"></mj-image>
         </mj-column>
         <mj-column css-class="gaurd-content" width="79%">
-          <mj-text align="left" css-class="guard-container">
-            <p class="text-main">Мы заметили подозрительную активность в вашем профиле. Не переживай, я рекомендую тебе <a href="#" class="link" tagert="_blank">изменить пароль</a> или <a href="#" class="link" tagert="_blank">включить двухфакторную авторизацию.</a></p>
+          <mj-text css-class="guard-container" align="left">
+            <p class="text-main guard-text">Мы заметили подозрительную активность в вашем профиле. Не переживай, я рекомендую тебе <a href="#" class="link" tagert="_blank">изменить пароль</a> или <a href="#" class="link" tagert="_blank">включить двухфакторную авторизацию.</a></p>
           </mj-text>
         </mj-column>
       </mj-section>

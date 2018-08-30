@@ -120,7 +120,8 @@
 <mj-section css-class="footer-copyright">
 
   <mj-column>
-    <mj-text css-class="copyright footer-container" align="left">&copy; Taker.im, 2018This is the footer
+    <mj-text css-class="copyright footer-container" align="left">
+      <p class="copyright-text">&copy; Taker.im, 2018</p>
     </mj-text>
   </mj-column>
 
