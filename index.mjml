@@ -33,7 +33,7 @@
       .footer-container { padding: 0 48px !important; }
       .footer-container_right {padding-left: 0 !important;}
       .guard-container { padding: 0 48px !important; }
-      .footer-top-mobile { display: none; width:0; height:0; overflow:hidden; float:none; visibility:hidden; border:none; }
+      .footer-top-mobile { display: none; width:0; height:0; overflow:hidden; float:none; visibility:hidden; border:none; mso-hide: all; }
       .button td { box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; padding: 0 !important; }
       .button table { width: 100%; }
       .button p { border-radius: 8px; }
@@ -94,7 +94,7 @@
         .news-img { padding-right: 24px !important; padding-top: 5px !important; }
       	.section-content { padding: 24px 24px 30px !important; }
       	.rating .section-content { padding-bottom: 24px !important; }
-      	.footer-top-mobile { display: inline-block !important; width:100% !important; height:auto !important; overflow:visible !important; float:none !important; visibility:visible !important; border:none !important; }
+      	.footer-top-mobile { display: inline-block !important; width:100% !important; height:auto !important; overflow:visible !important; float:none !important; visibility:visible !important; border:none !important; mso-hide: all !important; }
       	.footer-top-desktop { display: none !important; width: 0 !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; mso-hide: all !important; }
       	.button table {width: 240px !important; }
       	.button_wide td { border-radius: 3px !important; }
