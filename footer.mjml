@@ -25,7 +25,7 @@
   
   <mj-section>
     <mj-column>
-      <mj-divider css-class="footer-container" border-color="#e3e6eb"></mj-divider>
+      <mj-divider css-class="footer-desktop-divider" border-color="#e3e6eb"></mj-divider>
     </mj-column>
   </mj-section>
   
@@ -68,6 +68,12 @@
 
   </mj-section>
   
+  <mj-section background-color="#f4f5f9">
+    <mj-column>
+      <mj-divider css-class="footer-mobile-menu-divider" border-color="#f4f5f9" border-width="0"></mj-divider>
+    </mj-column>
+  </mj-section>
+  
   <mj-section css-class="footer-mobile-menu">
 
     <mj-column>
@@ -85,7 +91,7 @@
   
   <mj-section>
     <mj-column>
-      <mj-divider css-class="footer-container" border-color="#e3e6eb"></mj-divider>
+      <mj-divider css-class="footer-mobile-social-divider" border-color="#e3e6eb"></mj-divider>
     </mj-column>
   </mj-section>
   
@@ -106,6 +112,12 @@
 
   </mj-section>
 </mj-wrapper>
+
+<mj-section background-color="#f4f5f9">
+  <mj-column>
+    <mj-divider css-class="footer-bottom-divider" border-color="#f4f5f9" border-width="0"></mj-divider>
+  </mj-column>
+</mj-section>
 
 <mj-section css-class="footer-text">
 

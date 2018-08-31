@@ -1,6 +1,8 @@
 <mjml>
 
   <mj-head>
+    <mj-title>TakerIM</mj-title>
+    <mj-preview>Новостная рассылка Taker.im</mj-preview>
     <mj-font name="effra" href="https://use.typekit.net/psv2uqc.css" />
 
     <mj-attributes>
@@ -62,10 +64,11 @@
       .copyright { padding-top: 30px !important; padding-bottom: 65px !important; }
       .copyright-text { font-size: 17px; font-weight: 400; line-height: 1.53; letter-spacing: 0.006em; color: #8c95ae; }
       .link-gray { font-size: 14px; font-weight: 500; line-height: 1.2em; letter-spacing: 0.07em; text-decoration: none; text-transform: uppercase; color: #6e768d; }
-      .footer-desktop-socials { padding: 40px 0 43px; }
-      .footer-desktop-menu { padding: 22px 0 25px; }
-      .footer-mobile-logo { padding: 23px 0 17px !important; }
-      .footer-mobile-socials { padding: 24px 0 !important; }
+      .pre-footer-divider { padding: 26px 0 !important; }
+      .footer-bottom-divider { padding: 13px 0 !important; }
+      .footer-desktop-divider { padding: 43px 48px 22px !important; }
+      .footer-mobile-menu-divider { padding: 9px 12px !important; }
+      .footer-mobile-social-divider { padding: 0 12px 24px !important; }
     </mj-style>
 		<mj-style>
       .button:hover, .link:hover, .link-gray:hover, a:hover { opacity: 0.8; }
@@ -73,7 +76,6 @@
       @media screen and (max-width: 599px) {
       	.page { padding: 0 11px }
       	.section-divider { padding: 6px 0 !important; }
-      	.profile { padding-top: 18px !important; padding-bottom: 18px !important; }
       	.logo { padding: 30px 24px 18px !important; }
       	.logo td { width: 93px !important; }
       	.logo img { width: 93px !important; }
@@ -107,6 +109,8 @@
       	.guard-content { max-width: none !important; }
       	.guard-img { padding: 0 24px 24px !important; }
       	.copyright { padding-top: 24px !important; padding-bottom: 30px !important; }
+      	.pre-footer-divider { padding: 14px 0 !important; }
+      	.footer-bottom-divider { padding: 11px 0 !important; }
       }
       
       @media screen and (max-width: 480px) {
@@ -216,8 +220,7 @@
       <mj-column>
         <mj-divider css-class="section-divider" border-color="#f4f5f9" border-width="0"></mj-divider>
       </mj-column>
-    </mj-section>    
-      
+    </mj-section>          
     
     <mj-wrapper css-class="section achievement">      
       <mj-section background-color="#edeff4">
@@ -278,6 +281,12 @@
         </mj-column>
       </mj-section>
     </mj-wrapper>
+    
+    <mj-section background-color="#f4f5f9">
+      <mj-column>
+        <mj-divider css-class="pre-footer-divider" border-color="#f4f5f9" border-width="0"></mj-divider>
+      </mj-column>
+    </mj-section>
 
     <mj-include path="./footer.mjml" />
 
