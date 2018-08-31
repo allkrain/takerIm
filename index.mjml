@@ -37,7 +37,7 @@
       .button td { box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; padding: 0 !important; }
       .button table { width: 100%; }
       .button p { border-radius: 8px; }
-      .button-text { color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-sapcing: 0.07em; line-height: 16px; border: 16px solid #99cc00; border-radius: 25px; }
+      .button-text { color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-sapcing: 0.07em; line-height: 16px; border: 16px solid transparent; border-radius: 25px; }
       .text-bubble {padding: 0; border-width: 0; font-size: 0; margin-right: 8px; }
       .news-title {font-size: 20px; line-height: 1.4em; color: #1f1f22; font-weight: 400; }
       .news-text {font-size: 17px; line-height: 1.53em; color: #6e768d; letter-spacing: 0.005em; }
