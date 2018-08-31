@@ -8,7 +8,7 @@
         <mj-image src="https://allkrain.github.io/takerIm/assets/img/logo_taker.png" width="93" alt="TakerIM" css-class="logo-small footer-container" href="#" align="left" padding></mj-image>
       </mj-column>
       <mj-column>
-        <mj-social font-size="0" icon-size="24px" mode="horizontal" align="left" border-radius="0" inner-padding="6px 51px 6px 0" padding="0">
+        <mj-social font-size="0" icon-size="24px" mode="horizontal" align="left" border-radius="0" inner-padding="6px 46px 6px 0" padding="0">
           <mj-social-element href="#" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/vk.png" border-radius="0" icon-size="24px">
           </mj-social-element>
           <mj-social-element href="#" background-color="transparent" src="https://allkrain.github.io/takerIm/assets/img/fb.png" border-radius="0" icon-size="24px">

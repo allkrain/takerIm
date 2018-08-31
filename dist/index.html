@@ -58,11 +58,10 @@
         .mj-column-per-100 { width:100% !important; }
 .mj-column-per-77 { width:77% !important; }
 .mj-column-per-23 { width:23% !important; }
-.mj-column-per-27 { width:27% !important; }
-.mj-column-per-46 { width:46% !important; }
 .mj-column-per-13 { width:13% !important; }
 .mj-column-per-87 { width:87% !important; }
 .mj-column-per-50 { width:50% !important; }
+.mj-column-per-27 { width:27% !important; }
 .mj-column-per-73 { width:73% !important; }
       }
     </style>
@@ -76,7 +75,7 @@
       
       @media screen and (max-width: 599px) {
       	.page { padding: 0 11px }
-      	.section { padding-top: 6px !important; padding-bottom: 6px !important; }
+      	.section-divider { padding: 6px 0 !important; }
       	.profile { padding-top: 18px !important; padding-bottom: 18px !important; }
       	.logo { padding: 30px 24px 18px !important; }
       	.logo td { width: 93px !important; }
@@ -84,18 +83,21 @@
       	.container { padding: 0 24px !important; }
       	.guard-container { padding: 0 24px !important; }
       	.news-container { padding: 0 11px 0 24px !important; }
+      	.section-divider-big { padding: 6px 0 !important; }
       	.footer-container { padding: 0 12px !important; }
-      	.greeting { padding-bottom: 26px !important; }
+      	.greeting { padding-bottom: 32px !important; }
         .greeting-title { font-size: 24px !important; line-height: 1.17em !important; }
         .news-item { padding-top: 18px !important; padding-bottom: 23px !important; }
+      	.news-divider { padding: 23px 24px 18px !important; }
+      	.news-divider-top { padding-top: 18px !important; }
+        .news-divider-bottom { padding-bottom: 23px !important; }
         .news-title {font-size: 17px !important; line-height: 1.53em !important; }
         .news-img { padding-right: 24px !important; padding-top: 5px !important; }
       	.section-content { padding: 24px 24px 30px !important; }
       	.rating .section-content { padding-bottom: 24px !important; }
-      	.footer-top-mobile { display: block !important; width: 100% !important; height: auto !important; overflow: visible !important; float: none !important; visibility: visible !important; border: none !important; }
+      	.footer-top-mobile { display: inline-block !important; width:100% !important; height:auto !important; overflow:visible !important; float:none !important; visibility:visible !important; border:none !important; }
       	.footer-top-desktop { display: none !important; width: 0 !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; mso-hide: all !important; }
-      	.profile-col { width: 10% !important; }
-      	.profile-main {width: 80% !important; }
+      	.button table {width: 240px !important; }
       	.button_wide td { border-radius: 3px !important; }
       	.button_wide table { width: 100% !important; }
       	.button-text { border-width: 15px !important; }
@@ -105,6 +107,7 @@
       	.section-image { padding: 30px 24px 0 !important; }
       	.rating .text-main { margin-bottom: 24px !important; }
       	.guard-symbol { max-width: none !important; }
+      	.guard-content { max-width: none !important; }
       	.guard-img { padding: 0 24px 24px !important; }
       	.copyright { padding-top: 24px !important; padding-bottom: 30px !important; }
       }
@@ -224,7 +227,7 @@
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align: top; border-collapse: collapse; border-spacing: 0;" width="100%" valign="top">
         
             <tr>
-              <td align="center" class="greeting container" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; word-break: break-word; padding: 0 48px; padding-bottom: 29px;">
+              <td align="center" class="greeting container" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; word-break: break-word; padding: 0 48px; padding-bottom: 42px;">
                 
       <div style="font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 33; font-weight: 300; line-height: 1.24em; text-align: center; color: #1f1f22;">
         <p style="font-family: effra, Arial, Helvetica, sans-serif; margin: 0; font-size: 33px; line-height: 1.24em; font-weight: 300;" class="greeting-title">Привет, <b style="font-family: effra, Arial, Helvetica, sans-serif; font-weight: 500;">Simb!</b><br> Вот что ты пропустил пока тебя не было на сайте</p>
@@ -265,7 +268,7 @@
       <![endif]-->
     
       
-      <div class="section news" style="font-family: effra, Arial, Helvetica, sans-serif; padding-top: 12px; padding-bottom: 36px; Margin: 0px auto; max-width: 600px;">
+      <div class="section news" style="font-family: effra, Arial, Helvetica, sans-serif; Margin: 0px auto; max-width: 600px;">
         
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%">
           <tbody>
@@ -299,11 +302,93 @@
         <tr>
       
             <td
-               class="news-item-outlook white-outlook" style="width:600px;"
+               class="white-outlook" style="vertical-align:top;width:600px;"
             >
           <![endif]-->
             
-      <div class="mj-column-per-100 outlook-group-fix news-item white" style="font-family: effra, Arial, Helvetica, sans-serif; padding-top: 29px; padding-bottom: 31px; font-size: 0; line-height: 0; text-align: left; display: inline-block; width: 100%; direction: ltr; background-color: #ffffff;">
+      <div class="mj-column-per-100 outlook-group-fix white" style="font-family: effra, Arial, Helvetica, sans-serif; background-color: white; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%;">
+        
+      <table background="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #ffffff; vertical-align: top; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#ffffff" valign="top">
+        
+            <tr>
+              <td class="news-divider-top" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; padding: 10px 25px; word-break: break-word; padding-top: 29px; padding-bottom: 0;">
+                
+      <p style="font-family: effra, Arial, Helvetica, sans-serif; border-top: solid 0 #ffffff; font-size: 1; margin: 0px auto; width: 100%;">
+      </p>
+      
+      <!--[if mso | IE]>
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 0 #ffffff;font-size:1;margin:0px auto;width:550px;" role="presentation" width="550px"
+        >
+          <tr>
+            <td style="height:0;line-height:0;">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+      <![endif]-->
+    
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 width="600px"
+              >
+          
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div style="font-family: effra, Arial, Helvetica, sans-serif; background: #ffffff; background-color: #ffffff; Margin: 0px auto; max-width: 600px;">
+        
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #ffffff; background-color: #ffffff; width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#ffffff">
+          <tbody>
+            <tr>
+              <td style="font-family: effra, Arial, Helvetica, sans-serif; direction: ltr; font-size: 0px; padding: 0; text-align: center; vertical-align: top;" align="center" valign="top">
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               style="width:600px;"
+            >
+          <![endif]-->
+            
+      <div class="mj-column-per-100 outlook-group-fix" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0; line-height: 0; text-align: left; display: inline-block; width: 100%; direction: ltr;">
         <!--[if mso | IE]>
         <table  role="presentation" border="0" cellpadding="0" cellspacing="0">
           <tr>
@@ -354,7 +439,7 @@
           <tr>
             <td style="font-family: effra, Arial, Helvetica, sans-serif; width: 44px;" width="44">
               
-      <img height="44" src="https://allkrain.github.io/takerIm/assets/img/mes.png" style="border:0;display:block;outline:none;text-decoration:none;width:100%;" width="44">
+      <img height="44" src="https://allkrain.github.io/takerIm/assets/img/mes.png" style="min-width: 44px; border: 0; display: block; outline: none; text-decoration: none; width: 100%;" width="44">
     
             </td>
           </tr>
@@ -433,7 +518,7 @@
       <table background="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #ffffff; vertical-align: top; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#ffffff" valign="top">
         
             <tr>
-              <td class="container" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; word-break: break-word; padding: 0 48px;">
+              <td class="news-divider" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; word-break: break-word; padding: 31px 48px 29px;">
                 
       <p style="font-family: effra, Arial, Helvetica, sans-serif; border-top: solid 1px #eeeff4; font-size: 1; margin: 0px auto; width: 100%;">
       </p>
@@ -506,11 +591,11 @@
         <tr>
       
             <td
-               class="news-item-outlook white-outlook" style="width:600px;"
+               style="width:600px;"
             >
           <![endif]-->
             
-      <div class="mj-column-per-100 outlook-group-fix news-item white" style="font-family: effra, Arial, Helvetica, sans-serif; padding-top: 29px; padding-bottom: 31px; font-size: 0; line-height: 0; text-align: left; display: inline-block; width: 100%; direction: ltr; background-color: #ffffff;">
+      <div class="mj-column-per-100 outlook-group-fix" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0; line-height: 0; text-align: left; display: inline-block; width: 100%; direction: ltr;">
         <!--[if mso | IE]>
         <table  role="presentation" border="0" cellpadding="0" cellspacing="0">
           <tr>
@@ -561,7 +646,7 @@
           <tr>
             <td style="font-family: effra, Arial, Helvetica, sans-serif; width: 44px;" width="44">
               
-      <img height="44" src="https://allkrain.github.io/takerIm/assets/img/avatar.jpg" style="border:0;border-radius:22px;display:block;outline:none;text-decoration:none;width:100%;" width="44">
+      <img height="44" src="https://allkrain.github.io/takerIm/assets/img/avatar.jpg" style="min-width: 44px; border: 0; border-radius: 22px; display: block; outline: none; text-decoration: none; width: 100%;" width="44">
     
             </td>
           </tr>
@@ -616,15 +701,97 @@
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div style="font-family: effra, Arial, Helvetica, sans-serif; background: #ffffff; background-color: #ffffff; Margin: 0px auto; max-width: 600px;">
+        
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #ffffff; background-color: #ffffff; width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#ffffff">
+          <tbody>
+            <tr>
+              <td style="font-family: effra, Arial, Helvetica, sans-serif; direction: ltr; font-size: 0px; padding: 0; text-align: center; vertical-align: top;" align="center" valign="top">
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="white-outlook" style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+            
+      <div class="mj-column-per-100 outlook-group-fix white" style="font-family: effra, Arial, Helvetica, sans-serif; background-color: white; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%;">
+        
+      <table background="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #ffffff; vertical-align: top; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#ffffff" valign="top">
+        
+            <tr>
+              <td class="news-divider-bottom" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; padding: 10px 25px; word-break: break-word; padding-bottom: 31px; padding-top: 0;">
+                
+      <p style="font-family: effra, Arial, Helvetica, sans-serif; border-top: solid 0 #ffffff; font-size: 1; margin: 0px auto; width: 100%;">
+      </p>
+      
+      <!--[if mso | IE]>
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 0 #ffffff;font-size:1;margin:0px auto;width:550px;" role="presentation" width="550px"
+        >
+          <tr>
+            <td style="height:0;line-height:0;">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+      <![endif]-->
+    
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 width="600px"
+              >
+          
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       
         <v:rect  style="width:600px;" xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false">
-        <v:fill  origin="0.5, 0" position="0.5, 0" src="https://allkrain.github.io/takerIm/assets/img/bg-button.png" color="transparent" type="tile" />
+        <v:fill  origin="0.5, 0" position="0.5, 0" src="https://allkrain.github.io/takerIm/assets/img/bg-button.png" color="#f4f5f9" type="tile" />
         <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
       <![endif]-->
           
-      <div style="font-family: effra, Arial, Helvetica, sans-serif; background: transparent url(https://allkrain.github.io/takerIm/assets/img/bg-button.png) top center / 50px 50px repeat-x; Margin: 0px auto; max-width: 600px;">
+      <div style="font-family: effra, Arial, Helvetica, sans-serif; background: #f4f5f9 url(https://allkrain.github.io/takerIm/assets/img/bg-button.png) top center / 50px 50px repeat-x; Margin: 0px auto; max-width: 600px;">
         <div style="font-family: effra, Arial, Helvetica, sans-serif; line-height: 0; font-size: 0;">
-        <table align="center" background="https://allkrain.github.io/takerIm/assets/img/bg-button.png" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: transparent url(https://allkrain.github.io/takerIm/assets/img/bg-button.png) top center / 50px 50px repeat-x; width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%">
+        <table align="center" background="https://allkrain.github.io/takerIm/assets/img/bg-button.png" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #f4f5f9 url(https://allkrain.github.io/takerIm/assets/img/bg-button.png) top center / 50px 50px repeat-x; width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%">
           <tbody>
             <tr>
               <td style="font-family: effra, Arial, Helvetica, sans-serif; direction: ltr; font-size: 0px; padding: 0; text-align: center; vertical-align: top;" align="center" valign="top">
@@ -703,6 +870,80 @@
       </table>
       
       <table
+         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div style="font-family: effra, Arial, Helvetica, sans-serif; background: #f4f5f9; background-color: #f4f5f9; Margin: 0px auto; max-width: 600px;">
+        
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #f4f5f9; background-color: #f4f5f9; width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#f4f5f9">
+          <tbody>
+            <tr>
+              <td style="font-family: effra, Arial, Helvetica, sans-serif; direction: ltr; font-size: 0px; padding: 0; text-align: center; vertical-align: top;" align="center" valign="top">
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+            
+      <div class="mj-column-per-100 outlook-group-fix" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%;">
+        
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align: top; border-collapse: collapse; border-spacing: 0;" width="100%" valign="top">
+        
+            <tr>
+              <td class="section-divider-big" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; word-break: break-word; padding: 24px 0;">
+                
+      <p style="font-family: effra, Arial, Helvetica, sans-serif; border-top: solid 0 #f4f5f9; font-size: 1; margin: 0px auto; width: 100%;">
+      </p>
+      
+      <!--[if mso | IE]>
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 0 #f4f5f9;font-size:1;margin:0px auto;width:550px;" role="presentation" width="550px"
+        >
+          <tr>
+            <td style="height:0;line-height:0;">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+      <![endif]-->
+    
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+      <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="section-outlook rating-outlook" style="width:600px;" width="600"
       >
         <tr>
@@ -710,7 +951,7 @@
       <![endif]-->
     
       
-      <div class="section rating" style="font-family: effra, Arial, Helvetica, sans-serif; padding-top: 12px; padding-bottom: 12px; Margin: 0px auto; max-width: 600px;">
+      <div class="section rating" style="font-family: effra, Arial, Helvetica, sans-serif; Margin: 0px auto; max-width: 600px;">
         
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%">
           <tbody>
@@ -885,6 +1126,80 @@
       </table>
       
       <table
+         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div style="font-family: effra, Arial, Helvetica, sans-serif; background: #f4f5f9; background-color: #f4f5f9; Margin: 0px auto; max-width: 600px;">
+        
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #f4f5f9; background-color: #f4f5f9; width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#f4f5f9">
+          <tbody>
+            <tr>
+              <td style="font-family: effra, Arial, Helvetica, sans-serif; direction: ltr; font-size: 0px; padding: 0; text-align: center; vertical-align: top;" align="center" valign="top">
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+            
+      <div class="mj-column-per-100 outlook-group-fix" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%;">
+        
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align: top; border-collapse: collapse; border-spacing: 0;" width="100%" valign="top">
+        
+            <tr>
+              <td class="section-divider" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; word-break: break-word; padding: 12px 0;">
+                
+      <p style="font-family: effra, Arial, Helvetica, sans-serif; border-top: solid 0 #f4f5f9; font-size: 1; margin: 0px auto; width: 100%;">
+      </p>
+      
+      <!--[if mso | IE]>
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 0 #f4f5f9;font-size:1;margin:0px auto;width:550px;" role="presentation" width="550px"
+        >
+          <tr>
+            <td style="height:0;line-height:0;">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+      <![endif]-->
+    
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+      <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="section-outlook achievement-outlook" style="width:600px;" width="600"
       >
         <tr>
@@ -892,7 +1207,7 @@
       <![endif]-->
     
       
-      <div class="section achievement" style="font-family: effra, Arial, Helvetica, sans-serif; padding-top: 12px; padding-bottom: 12px; Margin: 0px auto; max-width: 600px;">
+      <div class="section achievement" style="font-family: effra, Arial, Helvetica, sans-serif; Margin: 0px auto; max-width: 600px;">
         
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%">
           <tbody>
@@ -1066,16 +1381,16 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="section-outlook profile-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="section profile" style="font-family: effra, Arial, Helvetica, sans-serif; padding-top: 12px; padding-bottom: 12px; Margin: 0px auto; max-width: 600px;">
+      <div style="font-family: effra, Arial, Helvetica, sans-serif; background: #f4f5f9; background-color: #f4f5f9; Margin: 0px auto; max-width: 600px;">
         
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #f4f5f9; background-color: #f4f5f9; width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#f4f5f9">
           <tbody>
             <tr>
               <td style="font-family: effra, Arial, Helvetica, sans-serif; direction: ltr; font-size: 0px; padding: 0; text-align: center; vertical-align: top;" align="center" valign="top">
@@ -1085,38 +1400,23 @@
         <tr>
       
             <td
-               style="width:600px;"
+               style="vertical-align:top;width:600px;"
             >
           <![endif]-->
             
-      <div class="mj-column-per-100 outlook-group-fix" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0; line-height: 0; text-align: left; display: inline-block; width: 100%; direction: ltr;">
-        <!--[if mso | IE]>
-        <table  role="presentation" border="0" cellpadding="0" cellspacing="0">
-          <tr>
+      <div class="mj-column-per-100 outlook-group-fix" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%;">
         
-              <td
-                 style="vertical-align:top;width:162px;"
-              >
-              <![endif]-->
-                
-      <div class="mj-column-per-27 outlook-group-fix profile-col" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 27%;">
-        
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse; border-spacing: 0;">
-        <tbody>
-          <tr>
-            <td style="font-family: effra, Arial, Helvetica, sans-serif; vertical-align: top; padding: 0;" valign="top">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse; border-spacing: 0;">
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align: top; border-collapse: collapse; border-spacing: 0;" width="100%" valign="top">
         
             <tr>
-              <td style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; padding: 24.5px 0; word-break: break-word;">
+              <td class="section-divider-permanent" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; word-break: break-word; padding: 12px 0;">
                 
-      <p style="font-family: effra, Arial, Helvetica, sans-serif; border-top: solid 1px #e3e6eb; font-size: 1; margin: 0px auto; width: 100%;">
+      <p style="font-family: effra, Arial, Helvetica, sans-serif; border-top: solid 0 #f4f5f9; font-size: 1; margin: 0px auto; width: 100%;">
       </p>
       
       <!--[if mso | IE]>
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #e3e6eb;font-size:1;margin:0px auto;width:162px;" role="presentation" width="162px"
+           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 0 #f4f5f9;font-size:1;margin:0px auto;width:550px;" role="presentation" width="550px"
         >
           <tr>
             <td style="height:0;line-height:0;">
@@ -1132,29 +1432,63 @@
           
       </table>
     
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
       </div>
     
-              <!--[if mso | IE]>
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
               </td>
-              
-              <td
-                 style="vertical-align:top;width:276px;"
-              >
-              <![endif]-->
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="section-outlook profile-outlook" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      
+        <v:rect  style="width:600px;" xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false">
+        <v:fill  origin="0.5, 0" position="0.5, 0" src="https://allkrain.github.io/takerIm/assets/img/line-button.png" color="#f4f5f9" type="tile" />
+        <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+      <![endif]-->
+          
+      <div class="section profile" style="font-family: effra, Arial, Helvetica, sans-serif; background: #f4f5f9 url(https://allkrain.github.io/takerIm/assets/img/line-button.png) top center / 50px 50px repeat-x; Margin: 0px auto; max-width: 600px;">
+        <div style="font-family: effra, Arial, Helvetica, sans-serif; line-height: 0; font-size: 0;">
+        <table align="center" background="https://allkrain.github.io/takerIm/assets/img/line-button.png" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #f4f5f9 url(https://allkrain.github.io/takerIm/assets/img/line-button.png) top center / 50px 50px repeat-x; width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%">
+          <tbody>
+            <tr>
+              <td style="font-family: effra, Arial, Helvetica, sans-serif; direction: ltr; font-size: 0px; padding: 0; text-align: center; vertical-align: top;" align="center" valign="top">
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
-      <div class="mj-column-per-46 outlook-group-fix profile-main" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 46%;">
+        <tr>
+      
+            <td
+               class="profile-main-outlook" style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+            
+      <div class="mj-column-per-100 outlook-group-fix profile-main" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%;">
         
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align: top; border-collapse: collapse; border-spacing: 0;" width="100%" valign="top">
         
             <tr>
               <td align="center" vertical-align="middle" class="button" style="font-family: effra, Arial, Helvetica, sans-serif; transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; font-size: 0px; padding: 0; word-break: break-word;">
                 
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; line-height: 100%; border-collapse: collapse; border-spacing: 0;" width="100%">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 276px; line-height: 100%; border-collapse: collapse; border-spacing: 0;" width="276">
         <tr>
           <td align="center" bgcolor="#99cc00" role="presentation" style="font-family: effra, Arial, Helvetica, sans-serif; box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; border: none; border-radius: 25px; color: #ffffff; cursor: auto; height: 50px; padding: 0;" valign="middle" height="50">
             <p style="margin: 0; border-radius: 8px; background: #99cc00; color: #ffffff; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 120%; Margin: 0; text-decoration: none; text-transform: none;">
@@ -1171,32 +1505,65 @@
     
       </div>
     
-              <!--[if mso | IE]>
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
               </td>
-              
-              <td
-                 style="vertical-align:top;width:162px;"
-              >
-              <![endif]-->
-                
-      <div class="mj-column-per-27 outlook-group-fix profile-col" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 27%;">
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    
+        <!--[if mso | IE]>
+        </v:textbox>
+      </v:rect>
+    
+          </td>
+        </tr>
+      </table>
+      
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div style="font-family: effra, Arial, Helvetica, sans-serif; background: #f4f5f9; background-color: #f4f5f9; Margin: 0px auto; max-width: 600px;">
         
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse; border-spacing: 0;">
-        <tbody>
-          <tr>
-            <td style="font-family: effra, Arial, Helvetica, sans-serif; vertical-align: top; padding: 0;" valign="top">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="border-collapse: collapse; border-spacing: 0;">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #f4f5f9; background-color: #f4f5f9; width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#f4f5f9">
+          <tbody>
+            <tr>
+              <td style="font-family: effra, Arial, Helvetica, sans-serif; direction: ltr; font-size: 0px; padding: 0; text-align: center; vertical-align: top;" align="center" valign="top">
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+            
+      <div class="mj-column-per-100 outlook-group-fix" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%;">
+        
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align: top; border-collapse: collapse; border-spacing: 0;" width="100%" valign="top">
         
             <tr>
-              <td style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; padding: 24.5px 0; word-break: break-word;">
+              <td class="section-divider-permanent" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; word-break: break-word; padding: 12px 0;">
                 
-      <p style="font-family: effra, Arial, Helvetica, sans-serif; border-top: solid 1px #e3e6eb; font-size: 1; margin: 0px auto; width: 100%;">
+      <p style="font-family: effra, Arial, Helvetica, sans-serif; border-top: solid 0 #f4f5f9; font-size: 1; margin: 0px auto; width: 100%;">
       </p>
       
       <!--[if mso | IE]>
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #e3e6eb;font-size:1;margin:0px auto;width:162px;" role="presentation" width="162px"
+           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 0 #f4f5f9;font-size:1;margin:0px auto;width:550px;" role="presentation" width="550px"
         >
           <tr>
             <td style="height:0;line-height:0;">
@@ -1212,19 +1579,6 @@
           
       </table>
     
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-      </div>
-    
-              <!--[if mso | IE]>
-              </td>
-              
-          </tr>
-          </table>
-        <![endif]-->
       </div>
     
           <!--[if mso | IE]>
@@ -1255,7 +1609,7 @@
       <![endif]-->
     
       
-      <div class="section guard" style="font-family: effra, Arial, Helvetica, sans-serif; padding-top: 12px; padding-bottom: 12px; Margin: 0px auto; max-width: 600px;">
+      <div class="section guard" style="font-family: effra, Arial, Helvetica, sans-serif; Margin: 0px auto; max-width: 600px;">
         
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%">
           <tbody>
@@ -1266,18 +1620,100 @@
                 
             <tr>
               <td
-                 class="gray-outlook guard-block-outlook" width="600px"
+                 width="600px"
               >
           
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="gray-outlook guard-block-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="gray guard-block" style="font-family: effra, Arial, Helvetica, sans-serif; padding-top: 30px; padding-bottom: 30px; background: #edeff4; background-color: #edeff4; Margin: 0px auto; max-width: 600px;">
+      <div style="font-family: effra, Arial, Helvetica, sans-serif; background: #edeff4; background-color: #edeff4; Margin: 0px auto; max-width: 600px;">
+        
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #edeff4; background-color: #edeff4; width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#edeff4">
+          <tbody>
+            <tr>
+              <td style="font-family: effra, Arial, Helvetica, sans-serif; direction: ltr; font-size: 0px; padding: 0; text-align: center; vertical-align: top;" align="center" valign="top">
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+            
+      <div class="mj-column-per-100 outlook-group-fix" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%;">
+        
+      <table background="#edeff4" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #edeff4; vertical-align: top; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#edeff4" valign="top">
+        
+            <tr>
+              <td class="guard-divider" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; word-break: break-word; padding: 15px 0;">
+                
+      <p style="font-family: effra, Arial, Helvetica, sans-serif; border-top: solid 0 #edeff4; font-size: 1; margin: 0px auto; width: 100%;">
+      </p>
+      
+      <!--[if mso | IE]>
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 0 #edeff4;font-size:1;margin:0px auto;width:550px;" role="presentation" width="550px"
+        >
+          <tr>
+            <td style="height:0;line-height:0;">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+      <![endif]-->
+    
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 width="600px"
+              >
+          
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div style="font-family: effra, Arial, Helvetica, sans-serif; background: #edeff4; background-color: #edeff4; Margin: 0px auto; max-width: 600px;">
         
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #edeff4; background-color: #edeff4; width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#edeff4">
           <tbody>
@@ -1327,7 +1763,7 @@
             >
           <![endif]-->
             
-      <div class="mj-column-per-87 outlook-group-fix guard-content" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%;">
+      <div class="mj-column-per-87 outlook-group-fix guard-content" style="font-family: effra, Arial, Helvetica, sans-serif; max-width: 522px; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%;">
         
       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align: top; border-collapse: collapse; border-spacing: 0;" width="100%" valign="top">
         
@@ -1337,6 +1773,88 @@
       <div style="font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 1; text-align: left; color: #000000;">
         <p class="text-main guard-text" style="font-family: effra, Arial, Helvetica, sans-serif; margin: 0; font-size: 17px; font-weight: 400; line-height: 1.53; color: #6e768d; letter-spacing: 0.006em;">Мы заметили подозрительную активность в вашем профиле. Не переживай, я рекомендую тебе <a href="#" class="link" target="_blank" style="font-family: effra, Arial, Helvetica, sans-serif; -moz-transition: all .3s ease; color: #7ba300; text-decoration: none; transition: all .3s ease; -webkit-transition: all .3s ease; font-size: inherit; font-weight: inherit; font-style: inherit; line-height: inherit;">изменить пароль</a> или <a href="#" class="link" target="_blank" style="font-family: effra, Arial, Helvetica, sans-serif; -moz-transition: all .3s ease; color: #7ba300; text-decoration: none; transition: all .3s ease; -webkit-transition: all .3s ease; font-size: inherit; font-weight: inherit; font-style: inherit; line-height: inherit;">включить двухфакторную авторизацию.</a></p>
       </div>
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 width="600px"
+              >
+          
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div style="font-family: effra, Arial, Helvetica, sans-serif; background: #edeff4; background-color: #edeff4; Margin: 0px auto; max-width: 600px;">
+        
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: #edeff4; background-color: #edeff4; width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#edeff4">
+          <tbody>
+            <tr>
+              <td style="font-family: effra, Arial, Helvetica, sans-serif; direction: ltr; font-size: 0px; padding: 0; text-align: center; vertical-align: top;" align="center" valign="top">
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+            
+      <div class="mj-column-per-100 outlook-group-fix" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 13px; text-align: left; direction: ltr; display: inline-block; vertical-align: top; width: 100%;">
+        
+      <table background="#edeff4" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #edeff4; vertical-align: top; border-collapse: collapse; border-spacing: 0;" width="100%" bgcolor="#edeff4" valign="top">
+        
+            <tr>
+              <td class="guard-divider" style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0px; word-break: break-word; padding: 15px 0;">
+                
+      <p style="font-family: effra, Arial, Helvetica, sans-serif; border-top: solid 0 #edeff4; font-size: 1; margin: 0px auto; width: 100%;">
+      </p>
+      
+      <!--[if mso | IE]>
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 0 #edeff4;font-size:1;margin:0px auto;width:550px;" role="presentation" width="550px"
+        >
+          <tr>
+            <td style="height:0;line-height:0;">
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+      <![endif]-->
+    
     
               </td>
             </tr>
@@ -1496,7 +2014,7 @@
               <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: none; display: inline-table; border-collapse: collapse; border-spacing: 0;">
                 
       <tr>
-        <td style="font-family: effra, Arial, Helvetica, sans-serif; padding: 6px 51px 6px 0;">
+        <td style="font-family: effra, Arial, Helvetica, sans-serif; padding: 6px 46px 6px 0;">
           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: transparent; border-radius: 0; width: 24px; border-collapse: collapse; border-spacing: 0;" width="24">
             <tr>
               <td style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0; height: 24px; vertical-align: middle; width: 24px;" width="24" height="24" valign="middle">
@@ -1519,7 +2037,7 @@
               <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: none; display: inline-table; border-collapse: collapse; border-spacing: 0;">
                 
       <tr>
-        <td style="font-family: effra, Arial, Helvetica, sans-serif; padding: 6px 51px 6px 0;">
+        <td style="font-family: effra, Arial, Helvetica, sans-serif; padding: 6px 46px 6px 0;">
           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: transparent; border-radius: 0; width: 24px; border-collapse: collapse; border-spacing: 0;" width="24">
             <tr>
               <td style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0; height: 24px; vertical-align: middle; width: 24px;" width="24" height="24" valign="middle">
@@ -1542,7 +2060,7 @@
               <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: none; display: inline-table; border-collapse: collapse; border-spacing: 0;">
                 
       <tr>
-        <td style="font-family: effra, Arial, Helvetica, sans-serif; padding: 6px 51px 6px 0;">
+        <td style="font-family: effra, Arial, Helvetica, sans-serif; padding: 6px 46px 6px 0;">
           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: transparent; border-radius: 0; width: 24px; border-collapse: collapse; border-spacing: 0;" width="24">
             <tr>
               <td style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0; height: 24px; vertical-align: middle; width: 24px;" width="24" height="24" valign="middle">
@@ -1565,7 +2083,7 @@
               <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: none; display: inline-table; border-collapse: collapse; border-spacing: 0;">
                 
       <tr>
-        <td style="font-family: effra, Arial, Helvetica, sans-serif; padding: 6px 51px 6px 0;">
+        <td style="font-family: effra, Arial, Helvetica, sans-serif; padding: 6px 46px 6px 0;">
           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background: transparent; border-radius: 0; width: 24px; border-collapse: collapse; border-spacing: 0;" width="24">
             <tr>
               <td style="font-family: effra, Arial, Helvetica, sans-serif; font-size: 0; height: 24px; vertical-align: middle; width: 24px;" width="24" height="24" valign="middle">
@@ -1851,7 +2369,7 @@
       <![endif]-->
     
       
-      <div class="footer-top-mobile" style="font-family: effra, Arial, Helvetica, sans-serif; display: none; width: 0; height: 0; overflow: hidden; float: none; visibility: hidden; border: none; font-size: 0; max-height: 0; mso-hide: all; Margin: 0px auto; max-width: 600px;">
+      <div class="footer-top-mobile" style="font-family: effra, Arial, Helvetica, sans-serif; display: none; width: 0; height: 0; overflow: hidden; float: none; visibility: hidden; border: none; Margin: 0px auto; max-width: 600px;">
         
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; border-collapse: collapse; border-spacing: 0;" width="100%">
           <tbody>
