@@ -18,6 +18,8 @@
       a, b, em, strong, i, p, blocquote, td, div, span, h1, h2, h3, h4, h5, h6 { font-family: effra, Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
       a, .button { transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; }
       p, h1, h2, h3, h4, h5, h6 { margin: 0; }
+      li { margin-left: 0 !important; }
+      ul { margin: 0 !important; }
       table { border-collapse: collapse !important; border-spacing: 0 !important; }
       .section-divider-big { padding: 24px 0 !important; }
       .section-divider { padding: 12px 0 !important; }
@@ -32,7 +34,7 @@
       .rating .section-content { padding-bottom: 27px !important; }
       .rating .text-main { margin-bottom: 42px; }
       .footer-container { padding: 0 48px !important; }
-      .footer-container_right {padding-left: 0 !important;}
+      .footer-container_right {padding-right: 12px !important;}
       .guard-container { padding: 0 48px !important; }
       .footer-top-mobile { display: none; width:0; height:0; overflow:hidden; float:none; visibility:hidden; border:none; mso-hide: all; }
       .button td { box-shadow: 0 4px 12px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; padding: 0 !important; }
@@ -67,10 +69,11 @@
       .link-gray { font-size: 14px; font-weight: 500; line-height: 1.2em; letter-spacing: 0.07em; text-decoration: none; text-transform: uppercase; color: #6e768d; }
       .pre-footer-divider { padding: 26px 0 !important; }
       .footer-bottom-divider { padding: 13px 0 !important; }
-      .footer-desktop-divider { padding: 43px 48px 22px !important; }
-      .footer-mobile-menu-divider { padding: 9px 12px !important; }
+      .footer-desktop-divider { padding: 43px 48px 35px !important; }
+      .footer-mobile-menu-divider { padding: 9px 12px 22px !important; }
       .footer-mobile-social-divider { padding: 0 12px 24px !important; }
       .section-rounded { border-radius: 3px !important; overflow: hidden; }
+      .footer-desktop-column { min-width: 252px !important; }
     </mj-style>
 		<mj-style>
       .button:hover, .link:hover, .link-gray:hover, a:hover { opacity: 0.8; }
