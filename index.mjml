@@ -9,12 +9,13 @@
       <mj-image alt=""></mj-image>
       <mj-section padding="0"></mj-section>
       <mj-column></mj-column>
-      <mj-button background-color="#99cc00" border-radius="25px" font-size="14px" padding="0" height="50px"></mj-button>
+      <mj-text font-family="effra, Arial, Helvetica, sans-serif"></mj-text>
+      <mj-button background-color="#99cc00" border-radius="25px" font-size="14px" padding="0" height="50px" font-family="effra, Arial, Helvetica, sans-serif"></mj-button>
       <mj-divider border-color="#eeeff4" border-style="solid" border-width="1px"></mj-divider>
       <mj-wrapper padding="0"></mj-wrapper>
     </mj-attributes>
     <mj-style inline="inline">
-      a, b, em, strong, i, p, blocquote, td, div, span, h1, h2, h3, h4, h5, h6 { font-family: effra, Arial, Helvetica, sans-serif; }
+      a, b, em, strong, i, p, blocquote, td, div, span, h1, h2, h3, h4, h5, h6 { font-family: effra, Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
       a, .button { transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; }
       p, h1, h2, h3, h4, h5, h6 { margin: 0; }
       table { border-collapse: collapse !important; border-spacing: 0 !important; }
@@ -34,10 +35,10 @@
       .footer-container_right {padding-left: 0 !important;}
       .guard-container { padding: 0 48px !important; }
       .footer-top-mobile { display: none; width:0; height:0; overflow:hidden; float:none; visibility:hidden; border:none; mso-hide: all; }
-      .button td { box-shadow: 0 2px 6px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; padding: 0 !important; }
+      .button td { box-shadow: 0 4px 12px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; padding: 0 !important; }
       .button table { width: 100%; }
       .button p { border-radius: 8px; }
-      .button-text { color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-sapcing: 0.07em; line-height: 16px; border: 16px solid transparent; border-radius: 25px; }
+      .button-text { color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-spacing: 0.07em; line-height: 16px; border: 16px solid transparent; border-radius: 25px; }
       .text-bubble {padding: 0; border-width: 0; font-size: 0; margin-right: 8px; }
       .news-title {font-size: 20px; line-height: 1.4em; color: #1f1f22; font-weight: 400; }
       .news-text {font-size: 17px; line-height: 1.53em; color: #6e768d; letter-spacing: 0.005em; }
@@ -69,6 +70,7 @@
       .footer-desktop-divider { padding: 43px 48px 22px !important; }
       .footer-mobile-menu-divider { padding: 9px 12px !important; }
       .footer-mobile-social-divider { padding: 0 12px 24px !important; }
+      .section-rounded { border-radius: 3px !important; overflow: hidden; }
     </mj-style>
 		<mj-style>
       .button:hover, .link:hover, .link-gray:hover, a:hover { opacity: 0.8; }
@@ -97,7 +99,7 @@
       	.footer-top-mobile { display: inline-block !important; width:100% !important; height:auto !important; overflow:visible !important; float:none !important; visibility:visible !important; border:none !important; mso-hide: all !important; }
       	.footer-top-desktop { display: none !important; width: 0 !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; mso-hide: all !important; }
       	.button table {width: 240px !important; }
-      	.button_wide td { border-radius: 3px !important; }
+      	.button_wide td { border-radius: 0 0 3px 3px !important; }
       	.button_wide table { width: 100% !important; }
       	.button-text { border-width: 15px !important; }
       	.rating-image img { width: 215px !important; height: 30px !important; margin: 0 auto; }
@@ -198,7 +200,7 @@
       </mj-column>
     </mj-section>    
       
-    <mj-wrapper css-class="section rating">      
+    <mj-wrapper css-class="section rating section-rounded">      
       <mj-section background-color="#edeff4">
         <mj-column css-class="gray">
           <mj-image css-class="rating-image section-image" src="https://allkrain.github.io/takerIm/assets/img/rating.png" width="269" height="38" align="center"></mj-image>
@@ -222,7 +224,7 @@
       </mj-column>
     </mj-section>          
     
-    <mj-wrapper css-class="section achievement">      
+    <mj-wrapper css-class="section achievement section-rounded">      
       <mj-section background-color="#edeff4">
         <mj-column css-class="gray">
           <mj-image css-class="achievement-image section-image" src="https://allkrain.github.io/takerIm/assets/img/achievement.png" width="222" height="50" align="center"></mj-image>
@@ -245,7 +247,7 @@
       </mj-column>
     </mj-section>
     
-    <mj-section css-class="section profile" background-color="#f4f5f9" background-url="https://allkrain.github.io/takerIm/assets/img/line-button.png" background-size="50px 50px" background-repeat="repeat-x">
+    <mj-section css-class="section profile section-rounded" background-color="#f4f5f9" background-url="https://allkrain.github.io/takerIm/assets/img/line-button.png" background-size="50px 50px" background-repeat="repeat-x">
         <mj-column css-class="profile-main" >
           <mj-button css-class="button" width="276px"><a href="#" class="button-text" target="_blank">Перейти в профиль</a></mj-button>
         </mj-column>
