@@ -40,7 +40,7 @@
       .button td { box-shadow: 0 4px 12px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; padding: 0 !important; }
       .button table { width: 100%; }
       .button p { border-radius: 8px; }
-      .button-text { color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-spacing: 0.07em; line-height: 16px; border: 16px solid transparent; border-radius: 25px; }
+      .button-text { color: #ffffff; text-transform: uppercase; text-decoration: none; font-size: 14px; letter-spacing: 0.07em; line-height: 1.14; mso-line-height-rule: exactly ! important; border: 16px solid transparent; border-radius: 25px; }
       .text-bubble {padding: 0; border-width: 0; font-size: 0; margin-right: 8px; }
       .news-title {font-size: 20px; line-height: 1.4em; color: #1f1f22; font-weight: 400; }
       .news-text {font-size: 17px; line-height: 1.53em; color: #6e768d; letter-spacing: 0.005em; }
@@ -53,7 +53,7 @@
       .guard-symbol { max-width: 78px; padding: 0; }
       .guard-content { max-width: 522px; }
       .guard-img { padding: 0 0 0 48px; }
-      .news-divider { padding: 31px 48px 29px !important; }
+      .news-divider { padding: 31px 48px 29px;}
       .news-divider-top { padding-top: 29px !important; padding-bottom: 0 !important; }
       .news-divider-bottom { padding-bottom: 31px !important; padding-top: 0 !important; }
       .news-img { padding-right: 48px; padding-top: 7px; }
@@ -66,7 +66,7 @@
       .text-small { font-size: 15px; font-weight: 400; line-height: 1.6; letter-spacing: 0.007em; color: #8c95ae; }
       .copyright { padding-top: 30px !important; padding-bottom: 65px !important; }
       .copyright-text { font-size: 17px; font-weight: 400; line-height: 1.53; letter-spacing: 0.006em; color: #8c95ae; }
-      .link-gray { font-size: 14px; font-weight: 500; line-height: 1.2em; letter-spacing: 0.07em; text-decoration: none; text-transform: uppercase; color: #6e768d; }
+      .link-gray { font-size: 14px; font-weight: 500; line-height: 1.2; letter-spacing: 0.07em; text-decoration: none; text-transform: uppercase; color: #6e768d; }
       .pre-footer-divider { padding: 26px 0 !important; }
       .footer-bottom-divider { padding: 13px 0 !important; }
       .footer-desktop-divider { padding: 43px 48px 35px !important; }
@@ -90,7 +90,7 @@
       	.section-divider-big { padding: 6px 0 !important; }
       	.footer-container { padding: 0 12px !important; }
       	.greeting { padding-bottom: 32px !important; }
-        .greeting-title { font-size: 24px !important; line-height: 1.17em !important; }
+        .greeting-title { font-size: 24px !important; line-height: 1.17 !important; }
         .news-item { padding-top: 18px !important; padding-bottom: 23px !important; }
       	.news-divider { padding: 23px 24px 18px !important; }
       	.news-divider-top { padding-top: 18px !important; }
@@ -131,8 +131,8 @@
     <mj-section>
 
       <mj-column>
-        <mj-text align="center" font-size="33" line-height="1.24em" font-weight="300" color="#1f1f22" css-class="greeting container">
-          <p style="font-size: 33px; line-height: 1.24em; font-weight: 300;" class="greeting-title">Привет, <b style="font-weight: 500;">Simb!</b><br> Вот что ты пропустил пока тебя не было на сайте</p>
+        <mj-text align="center" font-size="33" line-height="1.24" font-weight="300" color="#1f1f22" css-class="greeting container">
+          <p style="font-size: 33px; line-height: 1.24; font-weight: 300; mso-line-height-rule: exactly ! important;" class="greeting-title">Привет, <b style="font-weight: 500;">Simb!</b><br> Вот что ты пропустил пока тебя не было на сайте</p>
         </mj-text>
       </mj-column>
 
@@ -163,8 +163,8 @@
       </mj-section>
 
       <mj-section background-color="#ffffff">
-        <mj-column css-class="white"  background-color="#ffffff">
-          <mj-divider css-class="news-divider"></mj-divider>
+        <mj-column background-color="#ffffff">
+          <mj-divider css-class="news-divider" padding="31px 48px 29px"></mj-divider>
         </mj-column>
       </mj-section>
       
@@ -190,7 +190,7 @@
         </mj-column>
       </mj-section>
         
-      <mj-section background-color="#f4f5f9" background-url="https://allkrain.github.io/takerIm/assets/img/bg-button.png" background-size="50px 50px" background-repeat="repeat-x">
+      <mj-section background-color="#f4f5f9" background-url="https://allkrain.github.io/takerIm/assets/img/bg-button.png" background-size="50px 50px" background-repeat="repeat">
         <mj-column>
           <mj-button css-class="button button_wide" width="276px"><a href="#" class="button-text" target="_blank">посмотреть</a></mj-button>
         </mj-column>
@@ -250,7 +250,7 @@
       </mj-column>
     </mj-section>
     
-    <mj-section css-class="section profile section-rounded" background-color="#f4f5f9" background-url="https://allkrain.github.io/takerIm/assets/img/line-button.png" background-size="50px 50px" background-repeat="repeat-x">
+    <mj-section css-class="section profile section-rounded" background-color="#f4f5f9" background-url="https://allkrain.github.io/takerIm/assets/img/line-button.png" background-size="50px 50px" background-repeat="repeat">
         <mj-column css-class="profile-main" >
           <mj-button css-class="button" width="276px"><a href="#" class="button-text" target="_blank">Перейти в профиль</a></mj-button>
         </mj-column>
