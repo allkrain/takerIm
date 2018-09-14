@@ -15,6 +15,7 @@
       <mj-wrapper padding="0"></mj-wrapper>
     </mj-attributes>
     <mj-style inline="inline">
+      body { background: #f4f5f9; }
       a, b, em, strong, i, p, blocquote, td, div, span, h1, h2, h3, h4, h5, h6 { font-family: effra, Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
       a, .button { transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; }
       p, h1, h2, h3, h4, h5, h6 { margin: 0; }
@@ -36,7 +37,6 @@
       .footer-container { padding: 0 48px !important; }
       .footer-container_right {padding-right: 12px !important;}
       .guard-container { padding: 0 48px !important; }
-      .footer-top-mobile { display: none; width:0; height:0; overflow:hidden; float:none; visibility:hidden; border:none; mso-hide: all; }
       .button td { box-shadow: 0 4px 12px 0 rgba(153, 204, 0, 0.3); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; padding: 0 !important; }
       .button table { width: 100%; }
       .button p { border-radius: 8px; }
@@ -53,6 +53,7 @@
       .guard-symbol { max-width: 78px; padding: 0; }
       .guard-content { max-width: 522px; }
       .guard-img { padding: 0 0 0 48px; }
+      .guard-img img { min-width: 30px !important; }
       .news-divider { padding: 31px 48px 29px;}
       .news-divider-top { padding-top: 29px !important; padding-bottom: 0 !important; }
       .news-divider-bottom { padding-bottom: 31px !important; padding-top: 0 !important; }
@@ -60,20 +61,20 @@
       .news-img img { min-width: 44px; }
       .link {font-size: inherit !important; font-weight: inherit !important; font-style: inherit !important; line-height: inherit !important; color: #7ba300; text-decoration: none; transition: all .3s ease; -webkit-transition: all .3s ease; }
       .menu { list-style: none; text-align: left; padding: 0; }
-      .menu li { text-align: left; margin-bottom: 33px; }
+      .menu div { text-align: left; margin-bottom: 33px; }
       .text-title { font-size: 22px; font-weight: 400; color: #1f1f22; line-height: 1.36; margin-bottom: 13px; }
       .text-main { font-size: 17px; font-weight: 400; line-height: 1.53; color: #6e768d; letter-spacing: 0.006em }
       .text-small { font-size: 15px; font-weight: 400; line-height: 1.6; letter-spacing: 0.007em; color: #8c95ae; }
       .copyright { padding-top: 30px !important; padding-bottom: 65px !important; }
       .copyright-text { font-size: 17px; font-weight: 400; line-height: 1.53; letter-spacing: 0.006em; color: #8c95ae; }
-      .link-gray { font-size: 14px; font-weight: 500; line-height: 1.2; letter-spacing: 0.07em; text-decoration: none; text-transform: uppercase; color: #6e768d; }
+      .link-gray { font-size: 14px; font-weight: 500; line-height: 1.2; letter-spacing: 0.07em; text-decoration: none; text-transform: uppercase; color: #6e768d; border-bottom: none; }
       .pre-footer-divider { padding: 26px 0 !important; }
       .footer-bottom-divider { padding: 13px 0 !important; }
-      .footer-desktop-divider { padding: 43px 48px 35px !important; }
+      .footer-desktop-divider { padding: 43px 48px 35px; }
       .footer-mobile-menu-divider { padding: 9px 12px 22px !important; }
       .footer-mobile-social-divider { padding: 0 12px 24px !important; }
       .section-rounded { border-radius: 3px !important; overflow: hidden; }
-      .footer-desktop-column { min-width: 252px !important; }
+      .footer-desktop-column { min-width: 240px !important; }
     </mj-style>
 		<mj-style>
       .button:hover, .link:hover, .link-gray:hover, a:hover { opacity: 0.8; }
@@ -99,8 +100,6 @@
         .news-img { padding-right: 24px !important; padding-top: 5px !important; }
       	.section-content { padding: 24px 24px 30px !important; }
       	.rating .section-content { padding-bottom: 24px !important; }
-      	.footer-top-mobile { display: inline-block !important; width:100% !important; height:auto !important; overflow:visible !important; float:none !important; visibility:visible !important; border:none !important; mso-hide: all !important; }
-      	.footer-top-desktop { display: none !important; width: 0 !important; visibility: hidden !important; height: 0 !important; opacity: 0 !important; mso-hide: all !important; }
       	.button table {width: 240px !important; }
       	.button_wide td { border-radius: 0 0 3px 3px !important; }
       	.button_wide table { width: 100% !important; }
@@ -115,12 +114,10 @@
       	.guard-img { padding: 0 24px 24px !important; }
       	.copyright { padding-top: 24px !important; padding-bottom: 30px !important; }
       	.pre-footer-divider { padding: 14px 0 !important; }
-      	.footer-bottom-divider { padding: 11px 0 !important; }
-      }
-      
-      @media screen and (max-width: 480px) {
-      	.footer-logo { width: 43% !important;}
-      	.footer-logo-divider {width: 57% !important; }
+      	.footer-bottom-divider { padding: 0 11px !important; }
+        .footer-desktop-divider { padding: 24px 12px 35px !important; }
+        .footer-logo-column { width: 42% !important; }
+        .footer-socials-column { width: 58% !important; }      	
       }
     </mj-style>
   </mj-head>
