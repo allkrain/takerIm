@@ -45,7 +45,6 @@
       .news-title {font-size: 20px; line-height: 1.4em; color: #1f1f22; font-weight: 400; }
       .news-text {font-size: 17px; line-height: 1.53em; color: #6e768d; letter-spacing: 0.005em; }
       .white { background-color: white; }
-      .gray { background-color: #edeff4; }
       .news-link { text-decoration: none; }
       .news-content { width: 77%; }
       .news-image { width: 23%;}
@@ -80,6 +79,7 @@
       .button:hover, .link:hover, .link-gray:hover, a:hover { opacity: 0.8; }
       
       @media screen and (max-width: 599px) {
+      	.news { border-radius: 3px 3px 0 0 !important; overflow: hidden; }
       	.page { padding: 0 11px }
       	.section-divider { padding: 6px 0 !important; }
       	.logo { padding: 30px 24px 18px !important; }
@@ -200,14 +200,14 @@
       </mj-column>
     </mj-section>    
       
-    <mj-wrapper css-class="section rating section-rounded">      
-      <mj-section background-color="#edeff4">
+    <mj-wrapper css-class="section rating section-rounded" background-color="#edeff4">      
+      <mj-section>
         <mj-column css-class="gray">
           <mj-image css-class="rating-image section-image" src="https://allkrain.github.io/takerIm/assets/img/rating.png" width="269" height="38" align="center"></mj-image>
         </mj-column>
       </mj-section>
 
-      <mj-section background-color="#edeff4">
+      <mj-section>
         <mj-column css-class="gray">
           <mj-text css-class="section-content" align="center">
             <h3 class="text-title">Улучшай свой рейтинг!</h3>
@@ -224,14 +224,14 @@
       </mj-column>
     </mj-section>          
     
-    <mj-wrapper css-class="section achievement section-rounded">      
-      <mj-section background-color="#edeff4">
+    <mj-wrapper css-class="section achievement section-rounded" background-color="#edeff4">      
+      <mj-section>
         <mj-column css-class="gray">
           <mj-image css-class="achievement-image section-image" src="https://allkrain.github.io/takerIm/assets/img/achievement.png" width="222" height="50" align="center"></mj-image>
         </mj-column>
       </mj-section>
 
-      <mj-section background-color="#edeff4">
+      <mj-section>
         <mj-column css-class="gray">
           <mj-text css-class="section-content" align="center">
             <h3 class="text-title">Не останавливайся на достигнутом!</h3>
@@ -247,7 +247,7 @@
       </mj-column>
     </mj-section>
     
-    <mj-section css-class="section profile section-rounded" background-color="#f4f5f9" background-url="https://allkrain.github.io/takerIm/assets/img/line-button.png" background-size="50px 50px" background-repeat="repeat">
+    <mj-section css-class="section profile" background-color="#f4f5f9" background-url="https://allkrain.github.io/takerIm/assets/img/line-button.png" background-size="50px 50px" background-repeat="repeat">
         <mj-column css-class="profile-main" >
           <mj-button css-class="button" width="276px"><a href="#" class="button-text" target="_blank">Перейти в профиль</a></mj-button>
         </mj-column>
@@ -259,14 +259,14 @@
       </mj-column>
     </mj-section>
       
-    <mj-wrapper css-class="section guard">
-      <mj-section background-color="#edeff4">
-        <mj-column background-color="#edeff4">
+    <mj-wrapper css-class="section guard section-rounded" background-color="#edeff4">
+      <mj-section>
+        <mj-column>
           <mj-divider css-class="guard-divider" border-color="#edeff4" border-width="0"></mj-divider>
         </mj-column>
       </mj-section>
       
-      <mj-section background-color="#edeff4">
+      <mj-section>
         <mj-column css-class="guard-symbol" width="13%">
           <mj-image src="https://allkrain.github.io/takerIm/assets/img/guard.png" width="30" height="44" alt="" css-class="guard-img" padding="5px 0 24px 48px" align="center"></mj-image>
         </mj-column>
@@ -277,8 +277,8 @@
         </mj-column>
       </mj-section>
       
-      <mj-section background-color="#edeff4">
-        <mj-column background-color="#edeff4">
+      <mj-section>
+        <mj-column>
           <mj-divider css-class="guard-divider" border-color="#edeff4" border-width="0"></mj-divider>
         </mj-column>
       </mj-section>
